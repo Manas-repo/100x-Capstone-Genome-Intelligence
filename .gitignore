@@ -1,0 +1,14 @@
+# secrets
+.env
+.streamlit/secrets.toml
+
+# python
+.venv/
+__pycache__/
+*.pyc
+
+# large or raw data (downloaded by scripts, not committed)
+data/raw/
+*.vcf.gz
+*.vcf.gz.tbi
+*.txt.gz

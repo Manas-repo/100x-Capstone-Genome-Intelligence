@@ -1,0 +1,3 @@
+# Frontend (Gradio on Hugging Face Spaces)
+gradio
+requests

@@ -1,0 +1,8 @@
+# Backend (FastAPI on Render) and data pipeline
+fastapi
+uvicorn
+pandas
+requests
+python-dotenv
+groq
+supabase
