@@ -1,82 +1,594 @@
-gene,conditions,chrom,start,end,hi_score,inheritance,lof_mechanism,mechanism_note,acmg_restriction
-ACTA2,"Aortic aneurysm, familial thoracic 6",chr10,88935074,88991337,1.0,AD,no,missense (dominant negative),
-ACTC1,Familial hypertrophic cardiomyopathy 11,chr15,34790230,34795549,1.0,AD,no,missense,
-ACVRL1,Hereditary hemorrhagic telangiectasia type 2,chr12,51906944,51923361,3.0,AD,yes,loss of function,
-APC,Adenomatous polyposis coli,chr5,112707498,112846239,3.0,AD,yes,loss of function,
-APOB,Familial hypercholesterolemia 2,chr2,21001429,21044073,3.0,AD,yes,loss of function,
-ATP7B,Wilson disease,chr13,51932669,52012132,30.0,AR,yes,loss of function,
-BAG3,Dilated cardiomyopathy 1HH; Myofibrillar myopathy 6,chr10,119651380,119677819,3.0,AD,yes,loss of function,
-BMPR1A,Juvenile polyposis syndrome,chr10,86755763,86932844,3.0,AD,yes,loss of function,
-BRCA1,"Breast-ovarian cancer, familial 1",chr17,43044295,43170327,3.0,AD,yes,loss of function,
-BRCA2,"Breast-ovarian cancer, familial 2",chr13,32315508,32400268,3.0,AD,yes,loss of function,
-BTD,Biotinidase deficiency,chr3,15601341,15722522,,AR,yes,loss of function,
-CACNA1S,Malignant hyperthermia,chr1,201039512,201112426,0.0,AD,no,gain of function (malignant hyperthermia),
-CALM1,Catecholaminergic polymorphic ventricular tachycardia 4; Long QT syndrome 14,chr14,90396502,90408268,0.0,AD,no,missense,
-CALM2,Long QT syndrome 15; also associated with catecholaminergic polymorphic ventricular tachycardia,chr2,47160082,47176936,0.0,AD,no,missense,
-CALM3,Long QT syndrome 16; also associated with catecholaminergic polymorphic ventricular tachycardia,chr19,46601074,46610782,0.0,AD,no,missense,
-CASQ2,Catecholaminergic polymorphic ventricular tachycardia 2,chr1,115700021,115768714,30.0,AR,yes,loss of function,
-COL3A1,"Ehlers-Danlos syndrome, type 4",chr2,188974373,189012746,3.0,AD,yes,loss of function,
-DES,Dilated cardiomyopathy 1I; Myofibrillar myopathy 1,chr2,219417474,219426740,,AD,yes,loss of function,
-DSC2,"Arrhythmogenic right ventricular cardiomyopathy, type 11",chr18,31058840,31102421,1.0,AD,yes,loss of function,
-DSG2,"Arrhythmogenic right ventricular cardiomyopathy, type 10",chr18,31498177,31549008,2.0,AD,yes,loss of function,
-DSP,"Arrhythmogenic right ventricular cardiomyopathy, type 8; Dilated cardiomyopathy with woolly hair, palmoplantar keratoderma, and tooth agenesis",chr6,7541671,7586714,3.0,AD,yes,loss of function,
-ENG,Hereditary hemorrhagic telangiectasia type 1,chr9,127815016,127854658,3.0,AD,yes,loss of function,
-FBN1,Marfan's syndrome,chr15,48408313,48645709,3.0,AD,yes,loss of function,
-FLNC,Dilated cardiomyopathy; Myofibrillar myopathy 5,chr7,128830406,128859272,3.0,AD,yes,loss of function,
-GAA,Pompe disease,chr17,80101526,80119881,,AR,yes,loss of function,
-GLA,Fabry's disease,chrX,101397803,101407925,3.0,XL,yes,loss of function,
-HFE,Hereditary hemochromatosis (c.845G>A; p.C282Y homozygotes only),chr6,26087429,26098343,30.0,AR,no,specific variant only (p.C282Y homozygous),p.C282Y homozygotes only
-HNF1A,Maturity-Onset of Diabetes of the Young,chr12,120978543,121002512,3.0,AD,yes,loss of function,
-KCNH2,Long QT syndrome 2,chr7,150944961,150978321,3.0,AD,yes,loss of function,
-KCNQ1,Long QT syndrome 1,chr11,2445008,2849105,3.0,AD,yes,loss of function,
-LDLR,Familial hypercholesterolemia 1,chr19,11089463,11133820,3.0,AD,yes,loss of function,
-LMNA,Dilated cardiomyopathy 1A,chr1,156082573,156140081,3.0,AD,mixed,loss of function and missense,
-MAX,Pheochromocytoma,chr14,65006101,65102695,3.0,AD,yes,loss of function,
-MEN1,"Multiple endocrine neoplasia, type 1",chr11,64803516,64811294,3.0,AD,yes,loss of function,
-MLH1,Lynch syndrome 2,chr3,36993466,37050846,3.0,AD,yes,loss of function,
-MSH2,Lynch syndrome 1,chr2,47403067,47709830,3.0,AD,yes,loss of function,
-MSH6,Lynch syndrome 5,chr2,47783145,47810101,3.0,AD,yes,loss of function,
-MUTYH,MYH-associated polyposis,chr1,45329242,45340440,30.0,AR,yes,loss of function,
-MYBPC3,Familial hypertrophic cardiomyopathy 4,chr11,47331406,47352702,3.0,AD,yes,loss of function,
-MYH11,"Aortic aneurysm, familial thoracic 4",chr16,15703135,15857028,0.0,AD,no,missense,
-MYH7,Dilated cardiomyopathy 1S; Familial hypertrophic cardiomyopathy 1,chr14,23412740,23435660,0.0,AD,no,dominant negative missense,
-MYL2,Familial hypertrophic cardiomyopathy 10,chr12,110910845,110921449,30.0,AD,no,missense,
-MYL3,Familial hypertrophic cardiomyopathy 8,chr3,46857872,46882182,0.0,AD,no,missense,
-NF2,"Neurofibromatosis, type 2",chr22,29603556,29698600,3.0,AD,yes,loss of function,
-OTC,Ornithine carbamoyltransferase deficiency,chrX,38327684,38422928,3.0,XL,yes,loss of function,
-PALB2,Hereditary breast cancer,chr16,23603165,23641310,3.0,AD,yes,loss of function,
-PCSK9,"Hypercholesterolemia, autosomal dominant, 3",chr1,55039548,55064852,40.0,AD,no,gain of function,
-PKP2,"Arrhythmogenic right ventricular cardiomyopathy, type 9",chr12,32790755,32896777,3.0,AD,yes,loss of function,
-PMS2,Lynch syndrome 4,chr7,5970925,6009106,3.0,AD,yes,loss of function,
-PRKAG2,Familial hypertrophic cardiomyopathy 6,chr7,151556127,151877115,0.0,AD,no,gain of function,
-PTEN,PTEN hamartoma tumor syndrome,chr10,87863625,87971930,3.0,AD,yes,loss of function,
-RB1,Retinoblastoma,chr13,48303751,48481890,3.0,AD,yes,loss of function,
-RBM20,Dilated cardiomyopathy 1DD,chr10,110643245,110839468,1.0,AD,no,missense hotspot (RS domain),
-RET,"Familial medullary thyroid carcinoma; Multiple endocrine neoplasia, type 2a; Multiple endocrine neoplasia, type 2b",chr10,43077069,43130351,3.0,AD,no,gain of function,
-RPE65,RPE65-related retinopathy,chr1,68428822,68451103,,AR,yes,loss of function,
-RYR1,Malignant hyperthermia,chr19,38433691,38587564,30.0,AD,no,gain of function (malignant hyperthermia),
-RYR2,Catecholaminergic polymorphic ventricular tachycardia 1,chr1,237042184,237833988,0.0,AD,no,gain of function,
-SCN5A,Brugada syndrome 1; Dilated cardiomyopathy 1E; Long QT syndrome 3,chr3,38548062,38649687,3.0,AD,mixed,loss of function (Brugada) and gain of function (long QT 3),
-SDHAF2,Paragangliomas 2,chr11,61430124,61446733,3.0,AD,yes,loss of function,
-SDHB,Hereditary paraganglioma-pheochromocytoma syndrome,chr1,17018722,17054032,3.0,AD,yes,loss of function,
-SDHC,Paragangliomas 3,chr1,161314381,161363206,3.0,AD,yes,loss of function,
-SDHD,Hereditary paraganglioma-pheochromocytoma syndrome,chr11,112086873,112095794,3.0,AD,yes,loss of function,
-SMAD3,Loeys-Dietz syndrome type 3,chr15,67065602,67195169,3.0,AD,mixed,loss of function and missense,
-SMAD4,Juvenile polyposis syndrome; Juvenile polyposis/hereditary hemorrhagic telangiectasia syndrome,chr18,51030213,51085042,3.0,AD,yes,loss of function,
-STK11,Peutz-Jeghers syndrome,chr19,1205778,1228431,3.0,AD,yes,loss of function,
-TGFBR1,Loeys-Dietz syndrome type 1A,chr9,99103647,99154192,3.0,AD,no,missense (kinase domain),
-TGFBR2,Loeys-Dietz syndrome type 1B,chr3,30606356,30694142,0.0,AD,no,missense (kinase domain),
-TMEM127,Pheochromocytoma,chr2,96248514,96265997,3.0,AD,yes,loss of function,
-TMEM43,"Arrhythmogenic right ventricular cardiomyopathy, type 5",chr3,14125052,14143680,0.0,AD,no,single missense founder variant (p.S358L),
-TNNC1,Dilated cardiomyopathy 1Z,chr3,52451100,52454041,0.0,AD,no,missense,
-TNNI3,Familial hypertrophic cardiomyopathy 7,chr19,55151767,55157732,1.0,AD,no,missense,
-TNNT2,Dilated cardiomyopathy 1D; Familial hypertrophic cardiomyopathy 2,chr1,201359014,201377680,0.0,AD,no,missense,
-TP53,Li-Fraumeni syndrome 1,chr17,7668421,7687490,3.0,AD,yes,loss of function,
-TPM1,Familial hypertrophic cardiomyopathy 3,chr15,63042747,63071915,0.0,AD,no,missense,
-TRDN,Catecholaminergic polymorphic ventricular tachycardia 5; Long QT syndrome,chr6,123216339,123636950,30.0,AR,yes,loss of function,
-TSC1,Tuberous sclerosis 1,chr9,132891349,132945378,3.0,AD,yes,loss of function,
-TSC2,Tuberous sclerosis 2,chr16,2047985,2089491,3.0,AD,yes,loss of function,
-TTN,Dilated cardiomyopathy (truncating variants only),chr2,178525989,178807423,2.0,AD,yes,loss of function,truncating variants only
-TTR,Hereditary transthyretin-related amyloidosis,chr18,31591877,31598821,0.0,AD,no,gain of function (amyloid),
-VHL,Von Hippel-Lindau syndrome,chr3,10141778,10153667,3.0,AD,yes,loss of function,
-WT1,Wilms' tumor,chr11,32387775,32435539,3.0,AD,yes,loss of function,
+gene,conditions,chrom,start,end,hi_score,inheritance,lof_mechanism,mechanism_note,acmg_restriction,panel
+ACTA2,"Aortic aneurysm, familial thoracic 6",chr10,88935074,88991337,1.0,AD,no,missense (dominant negative),,acmg_sf
+ACTC1,Familial hypertrophic cardiomyopathy 11,chr15,34790230,34795549,1.0,AD,no,missense,,acmg_sf
+ACVRL1,Hereditary hemorrhagic telangiectasia type 2,chr12,51906944,51923361,3.0,AD,yes,loss of function,,acmg_sf
+APC,Adenomatous polyposis coli,chr5,112707498,112846239,3.0,AD,yes,loss of function,,acmg_sf
+APOB,Familial hypercholesterolemia 2,chr2,21001429,21044073,3.0,AD,yes,loss of function,,acmg_sf
+ATP7B,Wilson disease,chr13,51932669,52012132,30.0,AR,yes,loss of function,,acmg_sf
+BAG3,Dilated cardiomyopathy 1HH; Myofibrillar myopathy 6,chr10,119651380,119677819,3.0,AD,yes,loss of function,,acmg_sf
+BMPR1A,Juvenile polyposis syndrome,chr10,86755763,86932844,3.0,AD,yes,loss of function,,acmg_sf
+BRCA1,"Breast-ovarian cancer, familial 1",chr17,43044295,43170327,3.0,AD,yes,loss of function,,acmg_sf
+BRCA2,"Breast-ovarian cancer, familial 2",chr13,32315508,32400268,3.0,AD,yes,loss of function,,acmg_sf
+BTD,Biotinidase deficiency,chr3,15601341,15722522,,AR,yes,loss of function,,acmg_sf
+CACNA1S,Malignant hyperthermia,chr1,201039512,201112426,0.0,AD,no,gain of function (malignant hyperthermia),,acmg_sf
+CALM1,Catecholaminergic polymorphic ventricular tachycardia 4; Long QT syndrome 14,chr14,90396502,90408268,0.0,AD,no,missense,,acmg_sf
+CALM2,Long QT syndrome 15; also associated with catecholaminergic polymorphic ventricular tachycardia,chr2,47160082,47176936,0.0,AD,no,missense,,acmg_sf
+CALM3,Long QT syndrome 16; also associated with catecholaminergic polymorphic ventricular tachycardia,chr19,46601074,46610782,0.0,AD,no,missense,,acmg_sf
+CASQ2,Catecholaminergic polymorphic ventricular tachycardia 2,chr1,115700021,115768714,30.0,AR,yes,loss of function,,acmg_sf
+COL3A1,"Ehlers-Danlos syndrome, type 4",chr2,188974373,189012746,3.0,AD,yes,loss of function,,acmg_sf
+DES,Dilated cardiomyopathy 1I; Myofibrillar myopathy 1,chr2,219417474,219426740,,AD,yes,loss of function,,acmg_sf
+DSC2,"Arrhythmogenic right ventricular cardiomyopathy, type 11",chr18,31058840,31102421,1.0,AD,yes,loss of function,,acmg_sf
+DSG2,"Arrhythmogenic right ventricular cardiomyopathy, type 10",chr18,31498177,31549008,2.0,AD,yes,loss of function,,acmg_sf
+DSP,"Arrhythmogenic right ventricular cardiomyopathy, type 8; Dilated cardiomyopathy with woolly hair, palmoplantar keratoderma, and tooth agenesis",chr6,7541671,7586714,3.0,AD,yes,loss of function,,acmg_sf
+ENG,Hereditary hemorrhagic telangiectasia type 1,chr9,127815016,127854658,3.0,AD,yes,loss of function,,acmg_sf
+FBN1,Marfan's syndrome,chr15,48408313,48645709,3.0,AD,yes,loss of function,,acmg_sf
+FLNC,Dilated cardiomyopathy; Myofibrillar myopathy 5,chr7,128830406,128859272,3.0,AD,yes,loss of function,,acmg_sf
+GAA,Pompe disease,chr17,80101526,80119881,,AR,yes,loss of function,,acmg_sf
+GLA,Fabry's disease,chrX,101397803,101407925,3.0,XL,yes,loss of function,,acmg_sf
+HFE,Hereditary hemochromatosis (c.845G>A; p.C282Y homozygotes only),chr6,26087429,26098343,30.0,AR,no,specific variant only (p.C282Y homozygous),p.C282Y homozygotes only,acmg_sf
+HNF1A,Maturity-Onset of Diabetes of the Young,chr12,120978543,121002512,3.0,AD,yes,loss of function,,acmg_sf
+KCNH2,Long QT syndrome 2,chr7,150944961,150978321,3.0,AD,yes,loss of function,,acmg_sf
+KCNQ1,Long QT syndrome 1,chr11,2445008,2849105,3.0,AD,yes,loss of function,,acmg_sf
+LDLR,Familial hypercholesterolemia 1,chr19,11089463,11133820,3.0,AD,yes,loss of function,,acmg_sf
+LMNA,Dilated cardiomyopathy 1A,chr1,156082573,156140081,3.0,AD,mixed,loss of function and missense,,acmg_sf
+MAX,Pheochromocytoma,chr14,65006101,65102695,3.0,AD,yes,loss of function,,acmg_sf
+MEN1,"Multiple endocrine neoplasia, type 1",chr11,64803516,64811294,3.0,AD,yes,loss of function,,acmg_sf
+MLH1,Lynch syndrome 2,chr3,36993466,37050846,3.0,AD,yes,loss of function,,acmg_sf
+MSH2,Lynch syndrome 1,chr2,47403067,47709830,3.0,AD,yes,loss of function,,acmg_sf
+MSH6,Lynch syndrome 5,chr2,47783145,47810101,3.0,AD,yes,loss of function,,acmg_sf
+MUTYH,MYH-associated polyposis,chr1,45329242,45340440,30.0,AR,yes,loss of function,,acmg_sf
+MYBPC3,Familial hypertrophic cardiomyopathy 4,chr11,47331406,47352702,3.0,AD,yes,loss of function,,acmg_sf
+MYH11,"Aortic aneurysm, familial thoracic 4",chr16,15703135,15857028,0.0,AD,no,missense,,acmg_sf
+MYH7,Dilated cardiomyopathy 1S; Familial hypertrophic cardiomyopathy 1,chr14,23412740,23435660,0.0,AD,no,dominant negative missense,,acmg_sf
+MYL2,Familial hypertrophic cardiomyopathy 10,chr12,110910845,110921449,30.0,AD,no,missense,,acmg_sf
+MYL3,Familial hypertrophic cardiomyopathy 8,chr3,46857872,46882182,0.0,AD,no,missense,,acmg_sf
+NF2,"Neurofibromatosis, type 2",chr22,29603556,29698600,3.0,AD,yes,loss of function,,acmg_sf
+OTC,Ornithine carbamoyltransferase deficiency,chrX,38327684,38422928,3.0,XL,yes,loss of function,,acmg_sf
+PALB2,Hereditary breast cancer,chr16,23603165,23641310,3.0,AD,yes,loss of function,,acmg_sf
+PCSK9,"Hypercholesterolemia, autosomal dominant, 3",chr1,55039548,55064852,40.0,AD,no,gain of function,,acmg_sf
+PKP2,"Arrhythmogenic right ventricular cardiomyopathy, type 9",chr12,32790755,32896777,3.0,AD,yes,loss of function,,acmg_sf
+PMS2,Lynch syndrome 4,chr7,5970925,6009106,3.0,AD,yes,loss of function,,acmg_sf
+PRKAG2,Familial hypertrophic cardiomyopathy 6,chr7,151556127,151877115,0.0,AD,no,gain of function,,acmg_sf
+PTEN,PTEN hamartoma tumor syndrome,chr10,87863625,87971930,3.0,AD,yes,loss of function,,acmg_sf
+RB1,Retinoblastoma,chr13,48303751,48481890,3.0,AD,yes,loss of function,,acmg_sf
+RBM20,Dilated cardiomyopathy 1DD,chr10,110643245,110839468,1.0,AD,no,missense hotspot (RS domain),,acmg_sf
+RET,"Familial medullary thyroid carcinoma; Multiple endocrine neoplasia, type 2a; Multiple endocrine neoplasia, type 2b",chr10,43077069,43130351,3.0,AD,no,gain of function,,acmg_sf
+RPE65,RPE65-related retinopathy,chr1,68428822,68451103,,AR,yes,loss of function,,acmg_sf
+RYR1,Malignant hyperthermia,chr19,38433691,38587564,30.0,AD,no,gain of function (malignant hyperthermia),,acmg_sf
+RYR2,Catecholaminergic polymorphic ventricular tachycardia 1,chr1,237042184,237833988,0.0,AD,no,gain of function,,acmg_sf
+SCN5A,Brugada syndrome 1; Dilated cardiomyopathy 1E; Long QT syndrome 3,chr3,38548062,38649687,3.0,AD,mixed,loss of function (Brugada) and gain of function (long QT 3),,acmg_sf
+SDHAF2,Paragangliomas 2,chr11,61430124,61446733,3.0,AD,yes,loss of function,,acmg_sf
+SDHB,Hereditary paraganglioma-pheochromocytoma syndrome,chr1,17018722,17054032,3.0,AD,yes,loss of function,,acmg_sf
+SDHC,Paragangliomas 3,chr1,161314381,161363206,3.0,AD,yes,loss of function,,acmg_sf
+SDHD,Hereditary paraganglioma-pheochromocytoma syndrome,chr11,112086873,112095794,3.0,AD,yes,loss of function,,acmg_sf
+SMAD3,Loeys-Dietz syndrome type 3,chr15,67065602,67195169,3.0,AD,mixed,loss of function and missense,,acmg_sf
+SMAD4,Juvenile polyposis syndrome; Juvenile polyposis/hereditary hemorrhagic telangiectasia syndrome,chr18,51030213,51085042,3.0,AD,yes,loss of function,,acmg_sf
+STK11,Peutz-Jeghers syndrome,chr19,1205778,1228431,3.0,AD,yes,loss of function,,acmg_sf
+TGFBR1,Loeys-Dietz syndrome type 1A,chr9,99103647,99154192,3.0,AD,no,missense (kinase domain),,acmg_sf
+TGFBR2,Loeys-Dietz syndrome type 1B,chr3,30606356,30694142,0.0,AD,no,missense (kinase domain),,acmg_sf
+TMEM127,Pheochromocytoma,chr2,96248514,96265997,3.0,AD,yes,loss of function,,acmg_sf
+TMEM43,"Arrhythmogenic right ventricular cardiomyopathy, type 5",chr3,14125052,14143680,0.0,AD,no,single missense founder variant (p.S358L),,acmg_sf
+TNNC1,Dilated cardiomyopathy 1Z,chr3,52451100,52454041,0.0,AD,no,missense,,acmg_sf
+TNNI3,Familial hypertrophic cardiomyopathy 7,chr19,55151767,55157732,1.0,AD,no,missense,,acmg_sf
+TNNT2,Dilated cardiomyopathy 1D; Familial hypertrophic cardiomyopathy 2,chr1,201359014,201377680,0.0,AD,no,missense,,acmg_sf
+TP53,Li-Fraumeni syndrome 1,chr17,7668421,7687490,3.0,AD,yes,loss of function,,acmg_sf
+TPM1,Familial hypertrophic cardiomyopathy 3,chr15,63042747,63071915,0.0,AD,no,missense,,acmg_sf
+TRDN,Catecholaminergic polymorphic ventricular tachycardia 5; Long QT syndrome,chr6,123216339,123636950,30.0,AR,yes,loss of function,,acmg_sf
+TSC1,Tuberous sclerosis 1,chr9,132891349,132945378,3.0,AD,yes,loss of function,,acmg_sf
+TSC2,Tuberous sclerosis 2,chr16,2047985,2089491,3.0,AD,yes,loss of function,,acmg_sf
+TTN,Dilated cardiomyopathy (truncating variants only),chr2,178525989,178807423,2.0,AD,yes,loss of function,truncating variants only,acmg_sf
+TTR,Hereditary transthyretin-related amyloidosis,chr18,31591877,31598821,0.0,AD,no,gain of function (amyloid),,acmg_sf
+VHL,Von Hippel-Lindau syndrome,chr3,10141778,10153667,3.0,AD,yes,loss of function,,acmg_sf
+WT1,Wilms' tumor,chr11,32387775,32435539,3.0,AD,yes,loss of function,,acmg_sf
+AARS2,mitochondrial disease,chr6,44298726,44313376,30.0,AR,yes,loss of function (recessive),,carrier
+ABCA3,interstitial lung disease due to ABCA3 deficiency,chr16,2275878,2340788,30.0,AR,yes,loss of function (recessive),,carrier
+ABCA4,ABCA4-related retinopathy,chr1,93992834,94121177,30.0,AR,yes,loss of function (recessive),,carrier
+ABCB4,progressive familial intrahepatic cholestasis type 3,chr7,87400393,87480435,30.0,AR,yes,loss of function (recessive),,carrier
+ABCC8,"hyperinsulinemic hypoglycemia, familial, 1",chr11,17392498,17476894,30.0,AR,yes,loss of function (recessive),,carrier
+ABCG5,sitosterolemia,chr2,43806213,43838865,30.0,AR,yes,loss of function (recessive),,carrier
+ABCG8,sitosterolemia,chr2,43831942,43882988,30.0,AR,yes,loss of function (recessive),,carrier
+ABHD5,Dorfman-Chanarin disease,chr3,43690108,43734371,30.0,AR,yes,loss of function (recessive),,carrier
+ACAD8,isobutyryl-CoA dehydrogenase deficiency,chr11,134253510,134267494,30.0,AR,yes,loss of function (recessive),,carrier
+ACAD9,acyl-CoA dehydrogenase 9 deficiency,chr3,128879494,128924003,30.0,AR,yes,loss of function (recessive),,carrier
+ACADM,medium chain acyl-CoA dehydrogenase deficiency,chr1,75724431,75787575,30.0,AR,yes,loss of function (recessive),,carrier
+ACADS,short chain acyl-CoA dehydrogenase deficiency,chr12,120725774,120740009,30.0,AR,yes,loss of function (recessive),,carrier
+ACADSB,2-methylbutyryl-CoA dehydrogenase deficiency,chr10,123008972,123058300,30.0,AR,yes,loss of function (recessive),,carrier
+ACADVL,very long chain acyl-CoA dehydrogenase deficiency,chr17,7217125,7225273,30.0,AR,yes,loss of function (recessive),,carrier
+ACAT1,beta-ketothiolase deficiency,chr11,108116695,108148957,30.0,AR,yes,loss of function (recessive),,carrier
+ACO2,mitochondrial disease,chr22,41447830,41529273,30.0,AR,yes,loss of function (recessive),,carrier
+ACSF3,combined malonic and methylmalonic acidemia,chr16,89088375,89164121,30.0,AR,yes,loss of function (recessive),,carrier
+ACY1,aminoacylase 1 deficiency,chr3,51983047,51989457,30.0,AR,yes,loss of function (recessive),,carrier
+ADA,"severe combined immunodeficiency, autosomal recessive, T cell-negative, B cell-negative, NK cell-negative, due to adenosine deaminase deficiency",chr20,44584896,44652252,30.0,AR,yes,loss of function (recessive),,carrier
+ADAMTS13,congenital thrombotic thrombocytopenic purpura,chr9,133414358,133459402,30.0,AR,yes,loss of function (recessive),,carrier
+ADAR,ADAR-related type 1 interferonopathy,chr1,154581695,154628013,30.0,AR,yes,loss of function (recessive),,carrier
+ADGRG1,bilateral frontoparietal polymicrogyria,chr16,57610652,57665580,30.0,AR,yes,loss of function (recessive),,carrier
+ADSL,adenylosuccinate lyase deficiency,chr22,40346461,40390463,30.0,AR,yes,loss of function (recessive),,carrier
+AGA,aspartylglucosaminuria,chr4,177430127,177442450,30.0,AR,yes,loss of function (recessive),,carrier
+AGL,glycogen storage disease III,chr1,99849777,99924427,30.0,AR,yes,loss of function (recessive),,carrier
+AGPAT2,lipodystrophy,chr9,136673142,136687483,30.0,AR,yes,loss of function (recessive),,carrier
+AGXT,alanine glyoxylate aminotransferase deficiency,chr2,240868543,240881531,30.0,AR,yes,loss of function (recessive),,carrier
+AHI1,Joubert syndrome 3,chr6,135283407,135498434,30.0,AR,yes,loss of function (recessive),,carrier
+AIMP2,"leukodystrophy, hypomyelinating, 17",chr7,6009226,6024655,30.0,AR,yes,loss of function (recessive),,carrier
+AIPL1,AIPL1-related retinopathy,chr17,6393693,6435199,30.0,AR,yes,loss of function (recessive),,carrier
+AIRE,autoimmune polyendocrine syndrome type 1,chr21,44285838,44298648,30.0,AR,yes,loss of function (recessive),,carrier
+AK2,reticular dysgenesis,chr1,33006560,33080996,30.0,AR,yes,loss of function (recessive),,carrier
+ALDH7A1,pyridoxine-dependent epilepsy,chr5,126531200,126595362,30.0,AR,yes,loss of function (recessive),,carrier
+ALDOB,hereditary fructose intolerance,chr9,101420560,101449664,30.0,AR,yes,loss of function (recessive),,carrier
+ALG1,ALG1-congenital disorder of glycosylation,chr16,5033702,5087379,30.0,AR,yes,loss of function (recessive),,carrier
+ALG6,ALG6-congenital disorder of glycosylation 1C,chr1,63321730,63440448,30.0,AR,yes,loss of function (recessive),,carrier
+ALPL,ALPL-related autosomal recessive hypophosphatasia,chr1,21508813,21579441,30.0,AR,yes,loss of function (recessive),,carrier
+ALX3,frontorhiny,chr1,110059870,110070677,30.0,AR,yes,loss of function (recessive),,carrier
+AMT,glycine encephalopathy,chr3,49416771,49422685,30.0,AR,yes,loss of function (recessive),,carrier
+ANGPTL3,familial hypobetalipoproteinemia 2,chr1,62597464,62607699,30.0,AR,yes,loss of function (recessive),,carrier
+ANKS6,nephronophthisis 16,chr9,98729898,98796965,30.0,AR,yes,loss of function (recessive),,carrier
+ANO10,autosomal recessive spinocerebellar ataxia 10,chr3,43354859,43691594,30.0,AR,yes,loss of function (recessive),,carrier
+ANO5,autosomal recessive limb-girdle muscular dystrophy,chr11,21782659,22283567,30.0,AR,yes,loss of function (recessive),,carrier
+ANTXR2,hyaline fibromatosis syndrome,chr4,79901146,80125454,30.0,AR,yes,loss of function (recessive),,carrier
+AP4E1,AP-4 deficiency syndrome,chr15,50908668,51005899,30.0,AR,yes,loss of function (recessive),,carrier
+AP4S1,AP-4 deficiency syndrome,chr14,31024922,31130996,30.0,AR,yes,loss of function (recessive),,carrier
+ARFGEF2,"periventricular heterotopia with microcephaly, autosomal recessive",chr20,48921707,49036693,30.0,AR,yes,loss of function (recessive),,carrier
+ARSA,metachromatic leukodystrophy,chr22,50622754,50628177,30.0,AR,yes,loss of function (recessive),,carrier
+ARSB,mucopolysaccharidosis type 6,chr5,78777209,78986087,30.0,AR,yes,loss of function (recessive),,carrier
+ASL,argininosuccinic aciduria,chr7,66075800,66094697,30.0,AR,yes,loss of function (recessive),,carrier
+ASPA,Canavan disease,chr17,3472374,3503405,30.0,AR,yes,loss of function (recessive),,carrier
+ASPM,autosomal recessive primary microcephaly,chr1,197084121,197146699,30.0,AR,yes,loss of function (recessive),,carrier
+ASS1,citrullinemia type I,chr9,130443282,130502361,30.0,AR,yes,loss of function (recessive),,carrier
+ATM,ataxia telangiectasia,chr11,108222788,108369102,30.0,AR,yes,loss of function (recessive),,carrier
+ATP8A2,"cerebellar ataxia, intellectual disability, and dysequilibrium",chr13,25371897,26025851,30.0,AR,yes,loss of function (recessive),,carrier
+AUH,3-methylglutaconic aciduria type 1,chr9,91213805,91361972,30.0,AR,yes,loss of function (recessive),,carrier
+B3GALT6,B3GALT6-congenital disorder of glycosylation,chr1,1232237,1235041,30.0,AR,yes,loss of function (recessive),,carrier
+B4GALT7,"Ehlers-Danlos syndrome, spondylodysplastic type, 1",chr5,177600081,177611056,30.0,AR,yes,loss of function (recessive),,carrier
+B9D1,ciliopathy,chr17,19334308,19378193,30.0,AR,yes,loss of function (recessive),,carrier
+BBS1,BBS1-related ciliopathy,chr11,66510606,66534660,30.0,AR,yes,loss of function (recessive),,carrier
+BBS10,BBS10-related ciliopathy,chr12,76344474,76348447,30.0,AR,yes,loss of function (recessive),,carrier
+BBS2,BBS2-related ciliopathy,chr16,56465640,56582667,30.0,AR,yes,loss of function (recessive),,carrier
+BCKDHA,maple syrup urine disease type 1A,chr19,41397792,41425092,30.0,AR,yes,loss of function (recessive),,carrier
+BCKDHB,maple syrup urine disease type 1B,chr6,80106626,80384773,30.0,AR,yes,loss of function (recessive),,carrier
+BCS1L,Bjornstad syndrome; mitochondrial disease,chr2,218658764,218668759,30.0,AR,yes,loss of function (recessive),,carrier
+BIN1,centronuclear myopathy,chr2,127048017,127107556,30.0,AR,yes,loss of function (recessive),,carrier
+BRIP1,Fanconi anemia complementation group J,chr17,61679139,61863561,30.0,AR,yes,loss of function (recessive),,carrier
+BSND,Bartter disease type 4A,chr1,54998906,55017172,30.0,AR,yes,loss of function (recessive),,carrier
+BUB1B,mosaic variegated aneuploidy syndrome 1,chr15,40160984,40221137,30.0,AR,yes,loss of function (recessive),,carrier
+C19orf12,neurodegeneration with brain iron accumulation 4,chr19,29691270,29716060,30.0,AR,yes,loss of function (recessive),,carrier
+CA2,autosomal recessive osteopetrosis 3,chr8,85463860,85481493,30.0,AR,yes,loss of function (recessive),,carrier
+CABP4,"cone-rod synaptic disorder, congenital nonprogressive",chr11,67452406,67461752,30.0,AR,yes,loss of function (recessive),,carrier
+CANT1,Desbuquois dysplasia 1,chr17,78991707,79009867,30.0,AR,yes,loss of function (recessive),,carrier
+CAPN3,autosomal recessive limb-girdle muscular dystrophy,chr15,42359494,42412949,30.0,AR,yes,loss of function (recessive),,carrier
+CARD11,severe combined immunodeficiency due to CARD11 deficiency,chr7,2905881,3044228,30.0,AR,yes,loss of function (recessive),,carrier
+CASR,neonatal severe primary hyperparathyroidism,chr3,122183665,122291629,30.0,AR,yes,loss of function (recessive),,carrier
+CBS,classic homocystinuria,chr21,43050900,43076943,30.0,AR,yes,loss of function (recessive),,carrier
+CC2D2A,ciliopathy,chr4,15469865,15602097,30.0,AR,yes,loss of function (recessive),,carrier
+CCDC40,primary ciliary dyskinesia 15,chr17,80036000,80100613,30.0,AR,yes,loss of function (recessive),,carrier
+CCNO,primary ciliary dyskinesia 29,chr5,55231152,55233649,30.0,AR,yes,loss of function (recessive),,carrier
+CDAN1,"anemia, congenital dyserythropoietic, type 1a",chr15,42723544,42737156,30.0,AR,yes,loss of function (recessive),,carrier
+CDC45,Meier-Gorlin syndrome 7,chr22,19479457,19520612,30.0,AR,yes,loss of function (recessive),,carrier
+CDH23,nonsyndromic genetic hearing loss,chr10,71396884,71815947,30.0,AR,yes,loss of function (recessive),,carrier
+CEP152,microcephaly with or without short stature,chr15,48712928,48811146,30.0,AR,yes,loss of function (recessive),,carrier
+CEP290,CEP290-related ciliopathy,chr12,88049016,88142099,30.0,AR,yes,loss of function (recessive),,carrier
+CEP41,ciliopathy,chr7,130393771,130442433,30.0,AR,yes,loss of function (recessive),,carrier
+CEP57,mosaic variegated aneuploidy syndrome 2,chr11,95789965,95837070,30.0,AR,yes,loss of function (recessive),,carrier
+CERKL,CERKL-related retinopathy,chr2,181535041,181680665,30.0,AR,yes,loss of function (recessive),,carrier
+CFH,C3 glomerulonephritis,chr1,196651754,196753075,30.0,AR,yes,loss of function (recessive),,carrier
+CFTR,cystic fibrosis,chr7,117287120,117715971,30.0,AR,yes,loss of function (recessive),,carrier
+CHRNA1,"myasthenic syndrome, congenital, 1B, fast-channel",chr2,174747592,174787935,30.0,AR,yes,loss of function (recessive),,carrier
+CHRNG,CHRNG-associated hypo-akinesia disorder of prenatal onset,chr2,232539692,232548115,30.0,AR,yes,loss of function (recessive),,carrier
+CHST14,"Ehlers-Danlos syndrome, musculocontractural type 1",chr15,40470984,40473158,30.0,AR,yes,loss of function (recessive),,carrier
+CIB2,nonsyndromic genetic hearing loss,chr15,78102300,78131565,30.0,AR,yes,loss of function (recessive),,carrier
+CLN3,neuronal ceroid lipofuscinosis,chr16,28474111,28495575,30.0,AR,yes,loss of function (recessive),,carrier
+CLN6,neuronal ceroid lipofuscinosis,chr15,68206977,68257211,30.0,AR,yes,loss of function (recessive),,carrier
+CLN8,neuronal ceroid lipofuscinosis,chr8,1755778,1801711,30.0,AR,yes,loss of function (recessive),,carrier
+CNGA1,CNGA1-related retinopathy,chr4,47935128,48017301,30.0,AR,yes,loss of function (recessive),,carrier
+CNGA3,CNGA3-related retinopathy,chr2,98346188,98399797,30.0,AR,yes,loss of function (recessive),,carrier
+CNGB1,CNGB1-related retinopathy,chr16,57881892,57971128,30.0,AR,yes,loss of function (recessive),,carrier
+CNGB3,CNGB3-related retinopathy,chr8,86553977,86743675,30.0,AR,yes,loss of function (recessive),,carrier
+COG8,COG8-congenital disorder of glycosylation,chr16,69320140,69339920,30.0,AR,yes,loss of function (recessive),,carrier
+COL18A1,Knobloch syndrome 1,chr21,45405118,45513721,30.0,AR,yes,loss of function (recessive),,carrier
+COL1A2,"Ehlers-Danlos syndrome, cardiac valvular type",chr7,94394360,94431227,30.0,AR,yes,loss of function (recessive),,carrier
+COL6A2,collagen 6-related myopathy,chr21,46096722,46132851,30.0,AR,yes,loss of function (recessive),,carrier
+COL6A3,collagen 6-related myopathy,chr2,237324003,237414409,30.0,AR,yes,loss of function (recessive),,carrier
+COL7A1,recessive dystrophic epidermolysis bullosa,chr3,48564073,48595596,30.0,AR,yes,loss of function (recessive),,carrier
+COQ2,mitochondrial disease,chr4,83190293,83285141,30.0,AR,yes,loss of function (recessive),,carrier
+COX10,mitochondrial disease,chr17,14069490,14231736,30.0,AR,yes,loss of function (recessive),,carrier
+COX15,mitochondrial disease,chr10,99694554,99732858,30.0,AR,yes,loss of function (recessive),,carrier
+CP,aceruloplasminemia,chr3,149162410,149222049,30.0,AR,yes,loss of function (recessive),,carrier
+CPS1,carbamoyl phosphate synthetase I deficiency disease,chr2,210477641,210679109,30.0,AR,yes,loss of function (recessive),,carrier
+CPT1A,carnitine palmitoyl transferase 1A deficiency,chr11,68754620,68844410,30.0,AR,yes,loss of function (recessive),,carrier
+CPT2,carnitine palmitoyltransferase II deficiency,chr1,53196770,53214197,30.0,AR,yes,loss of function (recessive),,carrier
+CRB1,inherited retinal dystrophy,chr1,197268195,197478455,30.0,AR,yes,loss of function (recessive),,carrier
+CRB2,focal segmental glomerulosclerosis 9,chr9,123356170,123380324,30.0,AR,yes,loss of function (recessive),,carrier
+CSPP1,Joubert syndrome 21,chr8,67062381,67196778,30.0,AR,yes,loss of function (recessive),,carrier
+CSTB,Unverricht-Lundborg syndrome,chr21,43772511,43776608,30.0,AR,yes,loss of function (recessive),,carrier
+CTC1,cerebroretinal microangiopathy with calcifications and cysts 1,chr17,8224815,8248075,30.0,AR,yes,loss of function (recessive),,carrier
+CTH,cystathioninuria,chr1,70406194,70443519,30.0,AR,yes,loss of function (recessive),,carrier
+CTNS,cystinosis,chr17,3636446,3663103,30.0,AR,yes,loss of function (recessive),,carrier
+CTSF,adult neuronal ceroid lipofuscinosis,chr11,66563462,66568879,30.0,AR,yes,loss of function (recessive),,carrier
+CYB5R3,methemoglobinemia due to deficiency of methemoglobin reductase,chr22,42615730,42720870,30.0,AR,yes,loss of function (recessive),,carrier
+CYP11B2,familial hyperreninemic hypoaldosteronism type 2,chr8,142910424,142917943,30.0,AR,yes,loss of function (recessive),,carrier
+CYP1B1,CYP1B1-related glaucoma with or without anterior segment dysgenesis,chr2,38066973,38109902,30.0,AR,yes,loss of function (recessive),,carrier
+CYP27A1,cerebrotendinous xanthomatosis,chr2,218781688,218825335,30.0,AR,yes,loss of function (recessive),,carrier
+CYP4V2,Bietti crystalline corneoretinal dystrophy,chr4,186191258,186215245,30.0,AR,yes,loss of function (recessive),,carrier
+CYP7B1,CYP7B1-related disorder of oxysterol accumulation,chr8,64586581,64799145,30.0,AR,yes,loss of function (recessive),,carrier
+DAG1,neuromuscular disease caused by qualitative or quantitative defects of alpha-dystroglycan,chr3,49468649,49535624,30.0,AR,yes,loss of function (recessive),,carrier
+DARS2,mitochondrial disease,chr1,173824540,173858808,30.0,AR,yes,loss of function (recessive),,carrier
+DBT,maple syrup urine disease,chr1,100182222,100249873,30.0,AR,yes,loss of function (recessive),,carrier
+DCAF17,Woodhouse-Sakati syndrome,chr2,171434217,171491318,30.0,AR,yes,loss of function (recessive),,carrier
+DCLRE1C,severe combined immunodeficiency due to DCLRE1C deficiency,chr10,14897359,14954432,30.0,AR,yes,loss of function (recessive),,carrier
+DGUOK,mitochondrial disease,chr2,73926794,73958961,30.0,AR,yes,loss of function (recessive),,carrier
+DHCR7,Smith-Lemli-Opitz syndrome,chr11,71428193,71452868,30.0,AR,yes,loss of function (recessive),,carrier
+DHODH,postaxial acrofacial dysostosis,chr16,72008588,72027664,30.0,AR,yes,loss of function (recessive),,carrier
+DHTKD1,2-aminoadipic 2-oxoadipic aciduria,chr10,12068926,12125946,30.0,AR,yes,loss of function (recessive),,carrier
+DNAH11,primary ciliary dyskinesia 7,chr7,21543014,21902262,30.0,AR,yes,loss of function (recessive),,carrier
+DNAH5,primary ciliary dyskinesia 3,chr5,13690328,14011818,30.0,AR,yes,loss of function (recessive),,carrier
+DNAH8,spermatogenic failure 46,chr6,38715311,39030792,30.0,AR,yes,loss of function (recessive),,carrier
+DNAJC19,3-methylglutaconic aciduria type 5,chr3,180939429,180989843,30.0,AR,yes,loss of function (recessive),,carrier
+DNMT3B,immunodeficiency-centromeric instability-facial anomalies syndrome 1,chr20,32762385,32809359,30.0,AR,yes,loss of function (recessive),,carrier
+DOCK6,Adams-Oliver syndrome,chr19,11199295,11262533,30.0,AR,yes,loss of function (recessive),,carrier
+DOCK7,genetic developmental and epileptic encephalopathy,chr1,62454298,62688549,30.0,AR,yes,loss of function (recessive),,carrier
+DOK7,congenital myasthenic syndrome 10,chr4,3463190,3501540,30.0,AR,yes,loss of function (recessive),,carrier
+DPAGT1,DPAGT1-congenital disorder of glycosylation,chr11,119095979,119108331,30.0,AR,yes,loss of function (recessive),,carrier
+DPY19L2,male infertility due to globozoospermia,chr12,63558913,63668939,30.0,AR,yes,loss of function (recessive),,carrier
+DRC1,primary ciliary dyskinesia 21,chr2,26401908,26456717,30.0,AR,yes,loss of function (recessive),,carrier
+DYNC2H1,asphyxiating thoracic dystrophy 3,chr11,103109351,103479863,30.0,AR,yes,loss of function (recessive),,carrier
+DYSF,autosomal recessive limb-girdle muscular dystrophy,chr2,71453495,71686763,30.0,AR,yes,loss of function (recessive),,carrier
+ECHS1,Leigh syndrome; mitochondrial short-chain Enoyl-Coa hydratase 1 deficiency,chr10,133362368,133373714,30.0,AR,yes,loss of function (recessive),,carrier
+EIF2B1,leukoencephalopathy with vanishing white matter 1,chr12,123620406,123633766,30.0,AR,yes,loss of function (recessive),,carrier
+EIF2B4,leukoencephalopathy with vanishing white matter 4,chr2,27363420,27370466,30.0,AR,yes,loss of function (recessive),,carrier
+EIF2B5,leukoencephalopathy with vanishing white matter 5,chr3,184134986,184146127,30.0,AR,yes,loss of function (recessive),,carrier
+ELAC2,mitochondrial disease,chr17,12991268,13018065,30.0,AR,yes,loss of function (recessive),,carrier
+ERCC2,xeroderma pigmentosum group D,chr19,45349773,45370918,30.0,AR,yes,loss of function (recessive),,carrier
+ERCC5,xeroderma pigmentosum group G,chr13,102845831,102875995,30.0,AR,yes,loss of function (recessive),,carrier
+ERCC6,Cockayne spectrum with or without cerebrooculofacioskeletal syndrome,chr10,49454168,49539538,30.0,AR,yes,loss of function (recessive),,carrier
+ETFB,multiple acyl-CoA dehydrogenase deficiency,chr19,51345161,51366449,30.0,AR,yes,loss of function (recessive),,carrier
+ETFDH,multiple acyl-CoA dehydrogenase deficiency,chr4,158671968,158710758,30.0,AR,yes,loss of function (recessive),,carrier
+EVC,Ellis-van Creveld syndrome,chr4,5711172,5814305,30.0,AR,yes,loss of function (recessive),,carrier
+EVC2,Ellis-van Creveld syndrome,chr4,5542772,5709548,30.0,AR,yes,loss of function (recessive),,carrier
+EYS,EYS-related retinopathy,chr6,63719847,65707226,30.0,AR,yes,loss of function (recessive),,carrier
+F10,congenital factor X deficiency,chr13,113122771,113149531,30.0,AR,yes,loss of function (recessive),,carrier
+F12,congenital factor XII deficiency,chr5,177402133,177416583,30.0,AR,yes,loss of function (recessive),,carrier
+F13A1,"factor XIII, A subunit, deficiency of",chr6,6144080,6321013,30.0,AR,yes,loss of function (recessive),,carrier
+F2,congenital prothrombin deficiency,chr11,46719079,46768566,30.0,AR,yes,loss of function (recessive),,carrier
+F5,congenital factor V deficiency,chr1,169511951,169586699,30.0,AR,yes,loss of function (recessive),,carrier
+F7,factor VII deficiency,chr13,113105762,113120685,30.0,AR,yes,loss of function (recessive),,carrier
+FAH,tyrosinemia type I,chr15,80152292,80186990,30.0,AR,yes,loss of function (recessive),,carrier
+FAN1,karyomegalic interstitial nephritis,chr15,30890559,30946209,30.0,AR,yes,loss of function (recessive),,carrier
+FANCA,Fanconi anemia complementation group A,chr16,89726683,89816977,30.0,AR,yes,loss of function (recessive),,carrier
+FANCG,Fanconi anemia complementation group G,chr9,35073793,35082444,30.0,AR,yes,loss of function (recessive),,carrier
+FANCI,Fanconi anemia complementation group I,chr15,89243854,89318091,30.0,AR,yes,loss of function (recessive),,carrier
+FANCL,Fanconi anemia complementation group L,chr2,58159243,58241410,30.0,AR,yes,loss of function (recessive),,carrier
+FARS2,mitochondrial disease,chr6,5261007,5829192,30.0,AR,yes,loss of function (recessive),,carrier
+FASTKD2,mitochondrial disease,chr2,206765357,206796189,30.0,AR,yes,loss of function (recessive),,carrier
+FECH,"protoporphyria, erythropoietic, 1",chr18,57544377,57586942,30.0,AR,yes,loss of function (recessive),,carrier
+FERMT1,Kindler syndrome,chr20,6070288,6123644,30.0,AR,yes,loss of function (recessive),,carrier
+FGD4,Charcot-Marie-Tooth disease,chr12,32399318,32646050,30.0,AR,yes,loss of function (recessive),,carrier
+FGF3,"deafness with labyrinthine aplasia, microtia, and microdontia",chr11,69809968,69819416,30.0,AR,yes,loss of function (recessive),,carrier
+FIG4,Charcot-Marie-Tooth disease,chr6,109690609,109878098,30.0,AR,yes,loss of function (recessive),,carrier
+FKRP,myopathy caused by variation in FKRP,chr19,46746046,46776988,30.0,AR,yes,loss of function (recessive),,carrier
+FKTN,myopathy caused by variation in FKTN,chr9,105558122,105653820,30.0,AR,yes,loss of function (recessive),,carrier
+FLVCR2,Fowler syndrome,chr14,75578591,75663214,30.0,AR,yes,loss of function (recessive),,carrier
+FMO3,trimethylaminuria,chr1,171085113,171118675,30.0,AR,yes,loss of function (recessive),,carrier
+FOLR1,neurodegenerative syndrome due to cerebral folate transport deficiency,chr11,72189529,72199329,30.0,AR,yes,loss of function (recessive),,carrier
+FOXE1,Bamforth-Lazarus syndrome,chr9,97853226,97856717,30.0,AR,yes,loss of function (recessive),,carrier
+FOXRED1,mitochondrial disease,chr11,126269024,126281756,30.0,AR,yes,loss of function (recessive),,carrier
+FRAS1,Fraser syndrome,chr4,78056961,78544458,30.0,AR,yes,loss of function (recessive),,carrier
+FRRS1L,genetic developmental and epileptic encephalopathy,chr9,109130293,109167249,30.0,AR,yes,loss of function (recessive),,carrier
+FUCA1,fucosidosis,chr1,23845077,23868361,30.0,AR,yes,loss of function (recessive),,carrier
+G6PC3,autosomal recessive severe congenital neutropenia due to G6PC3 deficiency,chr17,44070620,44094678,30.0,AR,yes,loss of function (recessive),,carrier
+GALC,Krabbe disease,chr14,87837820,87993665,30.0,AR,yes,loss of function (recessive),,carrier
+GALE,galactose epimerase deficiency,chr1,23795599,23800804,30.0,AR,yes,loss of function (recessive),,carrier
+GALK1,galactokinase deficiency,chr17,75751470,75765251,30.0,AR,yes,loss of function (recessive),,carrier
+GALNS,mucopolysaccharidosis type 4A,chr16,88813733,88857832,30.0,AR,yes,loss of function (recessive),,carrier
+GALNT3,"tumoral calcinosis, hyperphosphatemic, familial, 1",chr2,165747339,165846201,30.0,AR,yes,loss of function (recessive),,carrier
+GAMT,guanidinoacetate methyltransferase deficiency,chr19,1397026,1401731,30.0,AR,yes,loss of function (recessive),,carrier
+GBE1,glycogen storage disease due to glycogen branching enzyme deficiency,chr3,81489161,81761840,30.0,AR,yes,loss of function (recessive),,carrier
+GCDH,glutaryl-CoA dehydrogenase deficiency,chr19,12891128,12915261,30.0,AR,yes,loss of function (recessive),,carrier
+GFER,mitochondrial disease,chr16,1983699,1987749,30.0,AR,yes,loss of function (recessive),,carrier
+GFPT1,congenital myasthenic syndrome 12,chr2,69319616,69387313,30.0,AR,yes,loss of function (recessive),,carrier
+GJB2,nonsyndromic genetic hearing loss,chr13,20187463,20192980,30.0,AR,yes,loss of function (recessive),,carrier
+GJC2,hypomyelinating leukodystrophy 2,chr1,228149891,228159826,30.0,AR,yes,loss of function (recessive),,carrier
+GLB1,GM1 gangliosidosis; mucopolysaccharidosis type 4B,chr3,32961103,33097436,30.0,AR,yes,loss of function (recessive),,carrier
+GLDC,glycine encephalopathy,chr9,6532464,6645734,30.0,AR,yes,loss of function (recessive),,carrier
+GNE,thrombocytopenia 12 with or without myopathy,chr9,36214441,36277042,30.0,AR,yes,loss of function (recessive),,carrier
+GNPAT,glyceronephosphate O-acyltransferase deficiency,chr1,231241184,231277973,30.0,AR,yes,loss of function (recessive),,carrier
+GNPTAB,GNPTAB-mucolipidosis,chr12,101744032,101830984,30.0,AR,yes,loss of function (recessive),,carrier
+GNPTG,GNPTG-mucolipidosis,chr16,1351924,1365737,30.0,AR,yes,loss of function (recessive),,carrier
+GORAB,geroderma osteodysplastica,chr1,170531819,170553834,30.0,AR,yes,loss of function (recessive),,carrier
+GP1BB,Bernard-Soulier syndrome,chr22,19723539,19724776,30.0,AR,yes,loss of function (recessive),,carrier
+GPT2,glutamate pyruvate transaminase 2 deficiency,chr16,46882857,46931299,30.0,AR,yes,loss of function (recessive),,carrier
+GRK1,Oguchi disease,chr13,113667219,113740559,30.0,AR,yes,loss of function (recessive),,carrier
+GRM6,GRM6-related retinopathy,chr5,178977587,178996206,30.0,AR,yes,loss of function (recessive),,carrier
+GRN,neuronal ceroid lipofuscinosis,chr17,44345108,44353106,30.0,AR,yes,loss of function (recessive),,carrier
+GSS,inherited glutathione synthetase deficiency,chr20,34928432,34956027,30.0,AR,yes,loss of function (recessive),,carrier
+GTPBP2,Jaberi-Elahi syndrome,chr6,43605316,43629291,30.0,AR,yes,loss of function (recessive),,carrier
+GUSB,mucopolysaccharidosis type 7,chr7,65960677,65982704,30.0,AR,yes,loss of function (recessive),,carrier
+GYG1,polyglucosan body myopathy type 2,chr3,148991332,149031775,30.0,AR,yes,loss of function (recessive),,carrier
+GYS1,glycogen storage disease due to muscle and heart glycogen synthase deficiency,chr19,48968125,48993349,30.0,AR,yes,loss of function (recessive),,carrier
+GYS2,glycogen storage disorder due to hepatic glycogen synthase deficiency,chr12,21531545,21604951,30.0,AR,yes,loss of function (recessive),,carrier
+HADHA,long chain 3-hydroxyacyl-CoA dehydrogenase deficiency,chr2,26189833,26245044,30.0,AR,yes,loss of function (recessive),,carrier
+HADHB,mitochondrial trifunctional protein deficiency,chr2,26243170,26290473,30.0,AR,yes,loss of function (recessive),,carrier
+HBA1,HBA1-related alpha thalassemia spectrum,chr16,176660,177527,30.0,AR,yes,loss of function (recessive),,carrier
+HBA2,HBA2-related alpha thalassemia spectrum,chr16,172021,173910,30.0,AR,yes,loss of function (recessive),,carrier
+HBB,beta-thalassemia HBB/LCRB; obsolete sickle cell disease and related diseases,chr11,5225464,5229395,30.0,AR,yes,loss of function (recessive),,carrier
+HEXA,Tay-Sachs disease,chr15,72340919,72376420,30.0,AR,yes,loss of function (recessive),,carrier
+HEXB,Sandhoff disease,chr5,74640023,74722647,30.0,AR,yes,loss of function (recessive),,carrier
+HGD,alkaptonuria,chr3,120628165,120682398,30.0,AR,yes,loss of function (recessive),,carrier
+HGSNAT,inherited retinal dystrophy; mucopolysaccharidosis type 3C,chr8,43140374,43202855,30.0,AR,yes,loss of function (recessive),,carrier
+HINT1,Charcot-Marie-Tooth disease,chr5,131155383,131224468,30.0,AR,yes,loss of function (recessive),,carrier
+HLCS,holocarboxylase synthetase deficiency,chr21,36748626,36990236,30.0,AR,yes,loss of function (recessive),,carrier
+HMGCS2,3-hydroxy-3-methylglutaryl-CoA synthase deficiency,chr1,119747979,119769092,30.0,AR,yes,loss of function (recessive),,carrier
+HOGA1,primary hyperoxaluria type 3,chr10,97584323,97613829,30.0,AR,yes,loss of function (recessive),,carrier
+HPCA,complex movement disorder with or without neurodevelopmental features,chr1,32881498,32898441,30.0,AR,yes,loss of function (recessive),,carrier
+HPD,tyrosinemia type III,chr12,121839120,121863596,30.0,AR,yes,loss of function (recessive),,carrier
+HPS1,Hermansky-Pudlak syndrome 1,chr10,98410939,98446966,30.0,AR,yes,loss of function (recessive),,carrier
+HPS3,Hermansky-Pudlak syndrome 3,chr3,149129602,149173732,30.0,AR,yes,loss of function (recessive),,carrier
+HPS5,Hermansky-Pudlak syndrome 5,chr11,18278668,18322523,30.0,AR,yes,loss of function (recessive),,carrier
+HSD17B4,Perrault syndrome; d-bifunctional protein deficiency,chr5,119452465,119637199,30.0,AR,yes,loss of function (recessive),,carrier
+IARS2,mitochondrial disease,chr1,220094086,220148043,30.0,AR,yes,loss of function (recessive),,carrier
+IDUA,mucopolysaccharidosis type 1,chr4,986997,1008344,30.0,AR,yes,loss of function (recessive),,carrier
+IFT172,ciliopathy,chr2,27444374,27489839,30.0,AR,yes,loss of function (recessive),,carrier
+IFT80,asphyxiating thoracic dystrophy 2,chr3,160256986,160400357,30.0,AR,yes,loss of function (recessive),,carrier
+IGHMBP2,hereditary peripheral neuropathy,chr11,68903863,68940602,30.0,AR,yes,loss of function (recessive),,carrier
+IL10RA,inflammatory bowel disease 28,chr11,117986370,118003037,30.0,AR,yes,loss of function (recessive),,carrier
+IL10RB,inflammatory bowel disease 25,chr21,33265958,33311420,30.0,AR,yes,loss of function (recessive),,carrier
+IL11RA,craniosynostosis and dental anomalies,chr9,34651582,34661902,30.0,AR,yes,loss of function (recessive),,carrier
+IL7R,immunodeficiency 104,chr5,35852695,35879603,30.0,AR,yes,loss of function (recessive),,carrier
+IMPG2,IMPG2-related recessive retinopathy,chr3,101222546,101320575,30.0,AR,yes,loss of function (recessive),,carrier
+INPP5E,Joubert syndrome 1,chr9,136428615,136439882,30.0,AR,yes,loss of function (recessive),,carrier
+INSR,Donohue syndrome,chr19,7112255,7294443,30.0,AR,yes,loss of function (recessive),,carrier
+IQCB1,ciliopathy,chr3,121769398,121835093,30.0,AR,yes,loss of function (recessive),,carrier
+ITGA2B,Glanzmann thrombasthenia,chr17,44372177,44389649,30.0,AR,yes,loss of function (recessive),,carrier
+ITGB3,Glanzmann thrombasthenia,chr17,47253649,47323218,30.0,AR,yes,loss of function (recessive),,carrier
+IVD,isovaleric acidemia,chr15,40405485,40435956,30.0,AR,yes,loss of function (recessive),,carrier
+KCNJ1,Bartter disease type 2,chr11,128836315,128874671,30.0,AR,yes,loss of function (recessive),,carrier
+KCNJ10,EAST syndrome,chr1,159998651,160070483,30.0,AR,yes,loss of function (recessive),,carrier
+KCNJ11,"hyperinsulinemic hypoglycemia, familial, 2",chr11,17364082,17389364,30.0,AR,yes,loss of function (recessive),,carrier
+KCNV2,inherited retinal dystrophy,chr9,2717510,2730037,30.0,AR,yes,loss of function (recessive),,carrier
+KLKB1,inherited prekallikrein deficiency,chr4,186225424,186258476,30.0,AR,yes,loss of function (recessive),,carrier
+LAMA2,LAMA2-related muscular dystrophy,chr6,128883075,129517185,30.0,AR,yes,loss of function (recessive),,carrier
+LARS2,Perrault syndrome,chr3,45388516,45554726,30.0,AR,yes,loss of function (recessive),,carrier
+LCA5,LCA5-related retinopathy,chr6,79484991,79545138,30.0,AR,yes,loss of function (recessive),,carrier
+LDB3,"cardiomyopathy, dilated, 2l",chr10,86666664,86736903,30.0,AR,yes,loss of function (recessive),,carrier
+LDLRAP1,"hypercholesterolemia, familial, 4",chr1,25543550,25591296,30.0,AR,yes,loss of function (recessive),,carrier
+LIFR,obsolete Stüve-Wiedemann syndrome,chr5,38474668,38608354,30.0,AR,yes,loss of function (recessive),,carrier
+LIG4,DNA ligase IV deficiency,chr13,108207439,108218373,30.0,AR,yes,loss of function (recessive),,carrier
+LIPA,lysosomal acid lipase deficiency,chr10,89212830,89415367,30.0,AR,yes,loss of function (recessive),,carrier
+LIPE,LIPE-related familial partial lipodystrophy,chr19,42401497,42427388,30.0,AR,yes,loss of function (recessive),,carrier
+LOXHD1,nonsyndromic genetic hearing loss,chr18,46476971,46657220,30.0,AR,yes,loss of function (recessive),,carrier
+LPIN2,Majeed syndrome,chr18,2885271,3013356,30.0,AR,yes,loss of function (recessive),,carrier
+LRP5,LRP5-related exudative vitreoretinopathy,chr11,68312430,68449275,30.0,AR,yes,loss of function (recessive),,carrier
+LRPPRC,Leigh syndrome; mitochondrial disease,chr2,43886224,43996226,30.0,AR,yes,loss of function (recessive),,carrier
+LRTOMT,autosomal recessive nonsyndromic hearing loss 63,chr11,72080331,72110782,30.0,AR,yes,loss of function (recessive),,carrier
+LTBP2,"glaucoma 3, primary congenital, D",chr14,74498163,74612378,30.0,AR,yes,loss of function (recessive),,carrier
+LYST,Chediak-Higashi syndrome,chr1,235661041,235883724,30.0,AR,yes,loss of function (recessive),,carrier
+LZTR1,Noonan syndrome,chr22,20981979,20999037,30.0,AR,yes,loss of function (recessive),,carrier
+MAG,complex hereditary spastic paraplegia,chr19,35291647,35316932,30.0,AR,yes,loss of function (recessive),,carrier
+MAK,MAK-related retinopathy,chr6,10762723,10838553,30.0,AR,yes,loss of function (recessive),,carrier
+MAN1B1,MAN1B1-congenital disorder of glycosylation,chr9,137085917,137109189,30.0,AR,yes,loss of function (recessive),,carrier
+MAN2B1,alpha-mannosidosis,chr19,12643831,12666762,30.0,AR,yes,loss of function (recessive),,carrier
+MASP1,3MC syndrome 1,chr3,187216086,187292278,30.0,AR,yes,loss of function (recessive),,carrier
+MCCC1,3-methylcrotonyl-CoA carboxylase deficiency,chr3,183015218,183116075,30.0,AR,yes,loss of function (recessive),,carrier
+MCCC2,3-methylcrotonyl-CoA carboxylase deficiency,chr5,71579531,71658706,30.0,AR,yes,loss of function (recessive),,carrier
+MCEE,methylmalonic acidemia due to methylmalonyl-CoA epimerase deficiency,chr2,71108926,71130279,30.0,AR,yes,loss of function (recessive),,carrier
+MCPH1,microcephaly with intellectual disability,chr8,6406592,6648508,30.0,AR,yes,loss of function (recessive),,carrier
+MFN2,multiple symmetric lipomatosis with partial lipodystrophy,chr1,11980181,12015211,30.0,AR,yes,loss of function (recessive),,carrier
+MFSD8,neuronal ceroid lipofuscinosis,chr4,127917799,127966034,30.0,AR,yes,loss of function (recessive),,carrier
+MKKS,MKKS-related ciliopathy,chr20,10401009,10434236,30.0,AR,yes,loss of function (recessive),,carrier
+MKS1,ciliopathy,chr17,58205350,58219605,30.0,AR,yes,loss of function (recessive),,carrier
+MLYCD,malonic aciduria,chr16,83899057,83951445,30.0,AR,yes,loss of function (recessive),,carrier
+MMAA,"methylmalonic aciduria, cblA type",chr4,145599042,145660033,30.0,AR,yes,loss of function (recessive),,carrier
+MMAB,"methylmalonic aciduria, cblB type",chr12,109553715,109573580,30.0,AR,yes,loss of function (recessive),,carrier
+MMACHC,methylmalonic aciduria and homocystinuria type cblC,chr1,45500186,45513382,30.0,AR,yes,loss of function (recessive),,carrier
+MOCS1,sulfite oxidase deficiency due to molybdenum cofactor deficiency type A,chr6,39899578,39934551,30.0,AR,yes,loss of function (recessive),,carrier
+MPC1,mitochondrial disease,chr6,166364916,166383002,30.0,AR,yes,loss of function (recessive),,carrier
+MPL,congenital amegakaryocytic thrombocytopenia 1,chr1,43337808,43354466,30.0,AR,yes,loss of function (recessive),,carrier
+MRPL44,mitochondrial disease,chr2,223957386,223969078,30.0,AR,yes,loss of function (recessive),,carrier
+MRPS22,mitochondrial disease,chr3,139005806,139360497,30.0,AR,yes,loss of function (recessive),,carrier
+MSRB3,nonsyndromic genetic hearing loss,chr12,65278542,65505156,30.0,AR,yes,loss of function (recessive),,carrier
+MTHFR,homocystinuria due to methylene tetrahydrofolate reductase deficiency,chr1,11785723,11806455,30.0,AR,yes,loss of function (recessive),,carrier
+MTO1,mitochondrial disease,chr6,73461578,73509236,30.0,AR,yes,loss of function (recessive),,carrier
+MUSK,congenital myasthenic syndrome 9,chr9,110668656,110806558,30.0,AR,yes,loss of function (recessive),,carrier
+MVK,mevalonate kinase deficiency,chr12,109573255,109600609,30.0,AR,yes,loss of function (recessive),,carrier
+MYO15A,nonsyndromic genetic hearing loss,chr17,18108756,18179802,30.0,AR,yes,loss of function (recessive),,carrier
+MYO18B,Klippel-Feil anomaly-myopathy-facial dysmorphism syndrome,chr22,25742142,26031045,30.0,AR,yes,loss of function (recessive),,carrier
+MYO7A,Usher syndrome type 1,chr11,77128206,77215241,30.0,AR,yes,loss of function (recessive),,carrier
+MYPN,MYPN-related myopathy,chr10,68087897,68212017,30.0,AR,yes,loss of function (recessive),,carrier
+NAGA,alpha-N-acetylgalactosaminidase deficiency,chr22,42032595,42071198,30.0,AR,yes,loss of function (recessive),,carrier
+NANS,"spondyloepimetaphyseal dysplasia, Genevieve type",chr9,98056637,98084394,30.0,AR,yes,loss of function (recessive),,carrier
+NBN,Nijmegen breakage syndrome,chr8,89924515,90003228,30.0,AR,yes,loss of function (recessive),,carrier
+NDE1,microcephaly with lissencephaly and/or hydranencephaly,chr16,15643267,15734691,30.0,AR,yes,loss of function (recessive),,carrier
+NDUFAF2,Leigh syndrome; mitochondrial disease,chr5,60945117,61154531,30.0,AR,yes,loss of function (recessive),,carrier
+NDUFAF5,Leigh syndrome; mitochondrial disease,chr20,13784978,13821580,30.0,AR,yes,loss of function (recessive),,carrier
+NDUFAF6,Leigh syndrome; mitochondrial disease,chr8,94895533,95116455,30.0,AR,yes,loss of function (recessive),,carrier
+NDUFB3,mitochondrial disease,chr2,201071433,201085757,30.0,AR,yes,loss of function (recessive),,carrier
+NDUFS2,Leigh syndrome; mitochondrial disease,chr1,161197104,161214723,30.0,AR,yes,loss of function (recessive),,carrier
+NEFL,Charcot-Marie-Tooth disease type 2,chr8,24950955,24956721,30.0,AR,yes,loss of function (recessive),,carrier
+NEU1,sialidosis,chr6,31857063,31862905,30.0,AR,yes,loss of function (recessive),,carrier
+NGLY1,congenital disorder of deglycosylation 1,chr3,25718698,25790039,30.0,AR,yes,loss of function (recessive),,carrier
+NHLRC1,Lafora disease,chr6,18120440,18122677,30.0,AR,yes,loss of function (recessive),,carrier
+NMNAT1,NMNAT1-related retinopathy,chr1,9943428,9996898,30.0,AR,yes,loss of function (recessive),,carrier
+NOTCH3,"cerebral arteriopathy, autosomal recessive, with subcortical infarcts and leukoencephalopathy 1",chr19,15159038,15201004,30.0,AR,yes,loss of function (recessive),,carrier
+NPC1,"Niemann-Pick disease, type C1",chr18,23506184,23586969,30.0,AR,yes,loss of function (recessive),,carrier
+NPC2,"Niemann-Pick disease, type C2",chr14,74427119,74494177,30.0,AR,yes,loss of function (recessive),,carrier
+NPHP3,nephronophthisis,chr3,132680608,132722498,30.0,AR,yes,loss of function (recessive),,carrier
+NPHP4,nephronophthisis 4,chr1,5862804,5993455,30.0,AR,yes,loss of function (recessive),,carrier
+NPHS1,"congenital nephrotic syndrome, Finnish type",chr19,35825372,35869287,30.0,AR,yes,loss of function (recessive),,carrier
+NR2E3,enhanced S-cone syndrome,chr15,71792638,71818259,30.0,AR,yes,loss of function (recessive),,carrier
+NTHL1,NTHL1-deficiency tumor predisposition syndrome,chr16,2039814,2047866,30.0,AR,yes,loss of function (recessive),,carrier
+NTRK1,hereditary sensory and autonomic neuropathy type 4,chr1,156815636,156881850,30.0,AR,yes,loss of function (recessive),,carrier
+NUBPL,mitochondrial disease,chr14,31489956,31861304,30.0,AR,yes,loss of function (recessive),,carrier
+NUP93,"nephrotic syndrome, type 12",chr16,56730095,56850286,30.0,AR,yes,loss of function (recessive),,carrier
+OAT,ornithine aminotransferase deficiency,chr10,124397298,124419760,30.0,AR,yes,loss of function (recessive),,carrier
+OCA2,oculocutaneous albinism type 2,chr15,27754859,28099664,30.0,AR,yes,loss of function (recessive),,carrier
+ORC6,Meier-Gorlin syndrome 3,chr16,46689301,46698399,30.0,AR,yes,loss of function (recessive),,carrier
+OTOF,nonsyndromic genetic hearing loss,chr2,26457203,26558756,30.0,AR,yes,loss of function (recessive),,carrier
+OTOGL,nonsyndromic genetic hearing loss,chr12,80099537,80380880,30.0,AR,yes,loss of function (recessive),,carrier
+OXCT1,mitochondrial disease,chr5,41729460,41870590,30.0,AR,yes,loss of function (recessive),,carrier
+PAH,phenylketonuria,chr12,102836889,102958410,30.0,AR,yes,loss of function (recessive),,carrier
+PARK7,Parkinson disease,chr1,7952654,7985991,30.0,AR,yes,loss of function (recessive),,carrier
+PAX1,otofaciocervical syndrome 2,chr20,21705659,21718481,30.0,AR,yes,loss of function (recessive),,carrier
+PC,pyruvate carboxylase deficiency disease,chr11,66848208,66958524,30.0,AR,yes,loss of function (recessive),,carrier
+PCBD1,pterin-4 alpha-carbinolamine dehydratase 1 deficiency,chr10,70882280,70888616,30.0,AR,yes,loss of function (recessive),,carrier
+PCCA,propionic acidemia,chr13,100089015,100530437,30.0,AR,yes,loss of function (recessive),,carrier
+PCCB,propionic acidemia,chr3,136250314,136351450,30.0,AR,yes,loss of function (recessive),,carrier
+PCNT,microcephalic osteodysplastic primordial dwarfism type II,chr21,46324082,46445769,30.0,AR,yes,loss of function (recessive),,carrier
+PDE6A,PDE6A-related retinopathy,chr5,149857953,149945287,30.0,AR,yes,loss of function (recessive),,carrier
+PDE6B,inherited retinal dystrophy,chr4,625559,670782,30.0,AR,yes,loss of function (recessive),,carrier
+PDHX,Leigh syndrome; mitochondrial disease,chr11,34915829,35021339,30.0,AR,yes,loss of function (recessive),,carrier
+PDX1,pancreatic agenesis 1,chr13,27919994,27926313,30.0,AR,yes,loss of function (recessive),,carrier
+PEPD,prolidase deficiency,chr19,33386950,33521823,30.0,AR,yes,loss of function (recessive),,carrier
+PEX1,peroxisome biogenesis disorder due to PEX1 defect,chr7,92487020,92528663,30.0,AR,yes,loss of function (recessive),,carrier
+PEX10,peroxisome biogenesis disorder,chr1,2403784,2413797,30.0,AR,yes,loss of function (recessive),,carrier
+PEX2,peroxisome biogenesis disorder,chr8,76978798,77001044,30.0,AR,yes,loss of function (recessive),,carrier
+PEX6,peroxisome biogenesis disorder,chr6,42959717,42979249,30.0,AR,yes,loss of function (recessive),,carrier
+PEX7,peroxisome biogenesis disorder,chr6,136822546,136914598,30.0,AR,yes,loss of function (recessive),,carrier
+PGAP3,hyperphosphatasia with intellectual disability syndrome 4,chr17,39671120,39696797,30.0,AR,yes,loss of function (recessive),,carrier
+PHKB,glycogen storage disease IXb,chr16,47461123,47701524,30.0,AR,yes,loss of function (recessive),,carrier
+PIEZO1,obsolete PIEZO1-related generalized lymphatic dysplasia with non-immune hydrops fetalis,chr16,88715338,88785251,30.0,AR,yes,loss of function (recessive),,carrier
+PIGL,syndromic intellectual disability,chr17,16217181,16351797,30.0,AR,yes,loss of function (recessive),,carrier
+PIGS,glycosylphosphatidylinositol biosynthesis defect 18,chr17,28553383,28571794,30.0,AR,yes,loss of function (recessive),,carrier
+PIK3CD,"immunodeficiency 14b, autosomal recessive",chr1,9629889,9730119,30.0,AR,yes,loss of function (recessive),,carrier
+PINK1,Parkinson disease,chr1,20633436,20652231,30.0,AR,yes,loss of function (recessive),,carrier
+PKD1,autosomal recessive polycystic kidney disease,chr16,2088708,2135898,30.0,AR,yes,loss of function (recessive),,carrier
+PKHD1,autosomal recessive polycystic kidney disease,chr6,51615299,52087618,30.0,AR,yes,loss of function (recessive),,carrier
+PKLR,pyruvate kinase deficiency of red cells,chr1,155289265,155301443,30.0,AR,yes,loss of function (recessive),,carrier
+PLA2G6,PLA2G6-associated neurodegeneration,chr22,38111495,38214778,30.0,AR,yes,loss of function (recessive),,carrier
+PLD1,PLD1-related congenital heart disease,chr3,171599049,171810950,30.0,AR,yes,loss of function (recessive),,carrier
+PLEKHG5,neuromuscular disease,chr1,6467122,6520074,30.0,AR,yes,loss of function (recessive),,carrier
+PLG,hypoplasminogenemia,chr6,160702105,160754469,30.0,AR,yes,loss of function (recessive),,carrier
+PMM2,PMM2-congenital disorder of glycosylation,chr16,8788823,8862534,30.0,AR,yes,loss of function (recessive),,carrier
+PNKP,"microcephaly, seizures, and developmental delay",chr19,49859882,49878351,30.0,AR,yes,loss of function (recessive),,carrier
+PNPO,pyridoxal phosphate-responsive seizures,chr17,47941506,47964354,30.0,AR,yes,loss of function (recessive),,carrier
+POC1B,cone-rod dystrophy 20,chr12,89357869,89526201,30.0,AR,yes,loss of function (recessive),,carrier
+POLH,xeroderma pigmentosum variant type,chr6,43575537,43628361,30.0,AR,yes,loss of function (recessive),,carrier
+POLR1C,POLR1C-related disorder,chr6,43509702,43562419,30.0,AR,yes,loss of function (recessive),,carrier
+POLR3A,POLR3A-related disorder,chr10,77953148,78029551,30.0,AR,yes,loss of function (recessive),,carrier
+POLR3B,POLR3B-related disorder,chr12,106357693,106511222,30.0,AR,yes,loss of function (recessive),,carrier
+POMGNT1,myopathy caused by variation in POMGNT1,chr1,46188681,46220305,30.0,AR,yes,loss of function (recessive),,carrier
+POMT1,myopathy caused by variation in POMT1,chr9,131502789,131523806,30.0,AR,yes,loss of function (recessive),,carrier
+POMT2,myopathy caused by variation in POMT2,chr14,77274956,77320898,30.0,AR,yes,loss of function (recessive),,carrier
+POR,Antley-Bixler syndrome with genital anomalies and disordered steroidogenesis,chr7,75899200,75986855,30.0,AR,yes,loss of function (recessive),,carrier
+PPP1R13L,arrhythmogenic cardiomyopathy with variable ectodermal abnormalities,chr19,45379634,45406367,30.0,AR,yes,loss of function (recessive),,carrier
+PPT1,neuronal ceroid lipofuscinosis,chr1,40072710,40097267,30.0,AR,yes,loss of function (recessive),,carrier
+PRF1,familial hemophagocytic lymphohistiocytosis 2,chr10,70596401,70602788,30.0,AR,yes,loss of function (recessive),,carrier
+PRKDC,severe combined immunodeficiency due to DNA-PKcs deficiency,chr8,47772970,47960182,30.0,AR,yes,loss of function (recessive),,carrier
+PRODH,hyperprolinemia type 1,chr22,18912696,18936451,30.0,AR,yes,loss of function (recessive),,carrier
+PROM1,PROM1-related recessive retinopathy,chr4,15963076,16084378,30.0,AR,yes,loss of function (recessive),,carrier
+PRSS56,isolated microphthalmia 6,chr2,232520388,232525716,30.0,AR,yes,loss of function (recessive),,carrier
+PRX,Charcot-Marie-Tooth disease type 4,chr19,40393764,40415070,30.0,AR,yes,loss of function (recessive),,carrier
+PTPRC,immunodeficiency 104,chr1,198629900,198759346,30.0,AR,yes,loss of function (recessive),,carrier
+PTS,BH4-deficient hyperphenylalaninemia A,chr11,112226059,112270449,30.0,AR,yes,loss of function (recessive),,carrier
+PYCR1,autosomal recessive cutis laxa type 2B,chr17,81932378,81942412,30.0,AR,yes,loss of function (recessive),,carrier
+PYGL,glycogen storage disease VI,chr14,50857891,50944734,30.0,AR,yes,loss of function (recessive),,carrier
+PYGM,glycogen storage disease V,chr11,64746389,64759990,30.0,AR,yes,loss of function (recessive),,carrier
+RAB23,RAB23-related Carpenter syndrome,chr6,57186103,57222848,30.0,AR,yes,loss of function (recessive),,carrier
+RAG1,recombinase activating gene 1 deficiency,chr11,36510348,36593156,30.0,AR,yes,loss of function (recessive),,carrier
+RAG2,recombinase activating gene 2 deficiency,chr11,36575574,36598279,30.0,AR,yes,loss of function (recessive),,carrier
+RBM8A,thrombocytopenia-absent radius syndrome,chr1,145920935,145928067,30.0,AR,yes,loss of function (recessive),,carrier
+RDH12,RDH12-related recessive retinopathy,chr14,67701886,67734451,30.0,AR,yes,loss of function (recessive),,carrier
+RDH5,RDH5-related retinopathy,chr12,55720367,55724714,30.0,AR,yes,loss of function (recessive),,carrier
+RECQL4,Rothmund-Thomson syndrome,chr8,144511284,144517890,30.0,AR,yes,loss of function (recessive),,carrier
+RMND1,mitochondrial disease,chr6,151398824,151452181,30.0,AR,yes,loss of function (recessive),,carrier
+RMRP,cartilage-hair hypoplasia,chr9,35657750,35658019,30.0,AR,yes,loss of function (recessive),,carrier
+RNASEH2A,RNASEH2A-related type 1 interferonopathy,chr19,12806505,12813644,30.0,AR,yes,loss of function (recessive),,carrier
+RNASEH2B,RNASEH2B-related type 1 interferonopathy,chr13,50909746,51024120,30.0,AR,yes,loss of function (recessive),,carrier
+RNASEH2C,RNASEH2C-related type 1 interferonopathy,chr11,65713901,65720988,30.0,AR,yes,loss of function (recessive),,carrier
+RNU4ATAC,RNU4ATAC spectrum disorder,chr2,121530880,121531009,30.0,AR,yes,loss of function (recessive),,carrier
+ROBO3,"gaze palsy, familial horizontal, with progressive scoliosis 1",chr11,124865413,124881471,30.0,AR,yes,loss of function (recessive),,carrier
+RP1,RP1-related recessive retinopathy,chr8,54509422,54871720,30.0,AR,yes,loss of function (recessive),,carrier
+RPGRIP1,inherited retinal dystrophy,chr14,21280083,21351301,30.0,AR,yes,loss of function (recessive),,carrier
+RPGRIP1L,ciliopathy,chr16,53598153,53703938,30.0,AR,yes,loss of function (recessive),,carrier
+RSPH1,primary ciliary dyskinesia 24,chr21,42472486,42496366,30.0,AR,yes,loss of function (recessive),,carrier
+RSPH3,primary ciliary dyskinesia 32,chr6,158968232,159000238,30.0,AR,yes,loss of function (recessive),,carrier
+RSPH4A,primary ciliary dyskinesia 11,chr6,116616474,116634765,30.0,AR,yes,loss of function (recessive),,carrier
+RTTN,microcephalic primordial dwarfism due to RTTN deficiency,chr18,70003031,70206097,30.0,AR,yes,loss of function (recessive),,carrier
+SAG,retinitis pigmentosa 47,chr2,233307816,233347055,30.0,AR,yes,loss of function (recessive),,carrier
+SBDS,Shwachman-Diamond syndrome,chr7,66987679,66995693,30.0,AR,yes,loss of function (recessive),,carrier
+SCNN1A,"pseudohypoaldosteronism, type IB1, autosomal recessive",chr12,6345124,6383917,30.0,AR,yes,loss of function (recessive),,carrier
+SCO2,Leigh syndrome; mitochondrial disease,chr22,50523564,50526461,30.0,AR,yes,loss of function (recessive),,carrier
+SDHA,mitochondrial disease,chr5,218206,257084,30.0,AR,yes,loss of function (recessive),,carrier
+SEC23B,congenital dyserythropoietic anemia type 2,chr20,18507520,18561422,30.0,AR,yes,loss of function (recessive),,carrier
+SERAC1,Leigh syndrome,chr6,158109515,158168295,30.0,AR,yes,loss of function (recessive),,carrier
+SGCA,autosomal recessive limb-girdle muscular dystrophy,chr17,50164214,50175935,30.0,AR,yes,loss of function (recessive),,carrier
+SGCB,autosomal recessive limb-girdle muscular dystrophy,chr4,52020697,52038305,30.0,AR,yes,loss of function (recessive),,carrier
+SGCG,autosomal recessive limb-girdle muscular dystrophy,chr13,23160011,23325958,30.0,AR,yes,loss of function (recessive),,carrier
+SGPL1,nephrotic syndrome 14,chr10,70815899,70958721,30.0,AR,yes,loss of function (recessive),,carrier
+SGSH,mucopolysaccharidosis type 3A,chr17,80206716,80220928,30.0,AR,yes,loss of function (recessive),,carrier
+SH3TC2,Charcot-Marie-Tooth disease type 4C,chr5,148923639,149063163,30.0,AR,yes,loss of function (recessive),,carrier
+SLC17A5,free sialic acid storage disease,chr6,73593364,73654106,30.0,AR,yes,loss of function (recessive),,carrier
+SLC19A3,Leigh syndrome,chr2,227683763,227718088,30.0,AR,yes,loss of function (recessive),,carrier
+SLC22A5,systemic primary carnitine deficiency disease,chr5,132369493,132395615,30.0,AR,yes,loss of function (recessive),,carrier
+SLC25A13,citrin deficiency,chr7,96120218,96322181,30.0,AR,yes,loss of function (recessive),,carrier
+SLC25A15,ornithine translocase deficiency,chr13,40789409,40812460,30.0,AR,yes,loss of function (recessive),,carrier
+SLC25A20,carnitine-acylcarnitine translocase deficiency,chr3,48856926,48898993,30.0,AR,yes,loss of function (recessive),,carrier
+SLC26A2,SLC26A2-related skeletal dysplasia,chr5,149960748,149993455,30.0,AR,yes,loss of function (recessive),,carrier
+SLC26A4,Pendred syndrome,chr7,107660594,107717809,30.0,AR,yes,loss of function (recessive),,carrier
+SLC29A3,H syndrome,chr10,71319232,71381423,30.0,AR,yes,loss of function (recessive),,carrier
+SLC2A10,arterial tortuosity syndrome,chr20,46709577,46737312,30.0,AR,yes,loss of function (recessive),,carrier
+SLC34A1,"hypercalcemia, infantile, 2",chr5,177379235,177398848,30.0,AR,yes,loss of function (recessive),,carrier
+SLC39A4,acrodermatitis enteropathica,chr8,144409742,144416894,30.0,AR,yes,loss of function (recessive),,carrier
+SLC3A1,cystinuria,chr2,44275458,44322674,30.0,AR,yes,loss of function (recessive),,carrier
+SLC46A1,hereditary folate malabsorption,chr17,28394642,28407197,30.0,AR,yes,loss of function (recessive),,carrier
+SLC52A3,Brown-Vialetto-van Laere syndrome 1,chr20,758695,776015,30.0,AR,yes,loss of function (recessive),,carrier
+SLC6A19,Hartnup disease,chr5,1201595,1225111,30.0,AR,yes,loss of function (recessive),,carrier
+SLC6A3,SLC6A3-related dopamine transporter deficiency syndrome,chr5,1392794,1445514,30.0,AR,yes,loss of function (recessive),,carrier
+SLC7A7,lysinuric protein intolerance,chr14,22773222,22829820,30.0,AR,yes,loss of function (recessive),,carrier
+SLC7A9,cystinuria,chr19,32830508,32869805,30.0,AR,yes,loss of function (recessive),,carrier
+SMPD1,acid sphingomyelinase deficiency,chr11,6390381,6394998,30.0,AR,yes,loss of function (recessive),,carrier
+SP110,hepatic veno-occlusive disease-immunodeficiency syndrome,chr2,230165186,230225729,30.0,AR,yes,loss of function (recessive),,carrier
+SPG11,hereditary spastic paraplegia 11,chr15,44554436,44663688,30.0,AR,yes,loss of function (recessive),,carrier
+SPG7,mitochondrial disease,chr16,89490719,89557768,30.0,AR,yes,loss of function (recessive),,carrier
+SPINK5,Netherton syndrome,chr5,148025683,148141031,30.0,AR,yes,loss of function (recessive),,carrier
+SPR,dopa-responsive dystonia due to sepiapterin reductase deficiency,chr2,72887374,72892158,30.0,AR,yes,loss of function (recessive),,carrier
+SPTBN2,autosomal recessive spinocerebellar ataxia 14,chr11,66682496,66744670,30.0,AR,yes,loss of function (recessive),,carrier
+SRD5A3,SRD5A3-congenital disorder of glycosylation,chr4,55346073,55373100,30.0,AR,yes,loss of function (recessive),,carrier
+ST3GAL5,GM3 synthase deficiency,chr2,85837120,85905199,30.0,AR,yes,loss of function (recessive),,carrier
+STIL,autosomal recessive primary microcephaly,chr1,47250139,47314892,30.0,AR,yes,loss of function (recessive),,carrier
+STRC,nonsyndromic genetic hearing loss,chr15,43597892,43618800,30.0,AR,yes,loss of function (recessive),,carrier
+SUMF1,mucosulfatidosis,chr3,3700814,4467278,30.0,AR,yes,loss of function (recessive),,carrier
+SYNE1,"autosomal recessive ataxia, Beauce type",chr6,152121687,152637801,30.0,AR,yes,loss of function (recessive),,carrier
+TAP1,MHC class I deficiency,chr6,32845204,32854026,30.0,AR,yes,loss of function (recessive),,carrier
+TBC1D24,DOORS syndrome,chr16,2475051,2509671,30.0,AR,yes,loss of function (recessive),,carrier
+TBCD,early-onset progressive diffuse brain atrophy-microcephaly-muscle weakness-optic atrophy syndrome,chr17,82751845,82945918,30.0,AR,yes,loss of function (recessive),,carrier
+TBCK,syndromic complex neurodevelopmental disorder,chr4,106041599,106316683,30.0,AR,yes,loss of function (recessive),,carrier
+TBXAS1,ghosal hematodiaphyseal dysplasia,chr7,139777051,140020325,30.0,AR,yes,loss of function (recessive),,carrier
+TCAP,autosomal recessive limb-girdle muscular dystrophy,chr17,39664990,39666554,30.0,AR,yes,loss of function (recessive),,carrier
+TCIRG1,autosomal recessive osteopetrosis 1,chr11,68038977,68050899,30.0,AR,yes,loss of function (recessive),,carrier
+TCTN2,Joubert syndrome 24,chr12,123671110,123708403,30.0,AR,yes,loss of function (recessive),,carrier
+TELO2,TELO2-related intellectual disability-neurodevelopmental disorder,chr16,1493329,1512551,30.0,AR,yes,loss of function (recessive),,carrier
+TFR2,hemochromatosis type 3,chr7,100620416,100642779,30.0,AR,yes,loss of function (recessive),,carrier
+TGDS,Catel-Manzke syndrome,chr13,94574041,94596286,30.0,AR,yes,loss of function (recessive),,carrier
+TK2,mitochondrial disease,chr16,66508003,66552544,30.0,AR,yes,loss of function (recessive),,carrier
+TMEM126A,"autosomal recessive optic atrophy, OPA7 type; mitochondrial disease",chr11,85647956,85656547,30.0,AR,yes,loss of function (recessive),,carrier
+TMEM126B,mitochondrial disease,chr11,85628556,85638965,30.0,AR,yes,loss of function (recessive),,carrier
+TMEM216,ciliopathy,chr11,61392393,61400408,30.0,AR,yes,loss of function (recessive),,carrier
+TMEM67,ciliopathy,chr8,93754840,93819234,30.0,AR,yes,loss of function (recessive),,carrier
+TMEM70,mitochondrial disease,chr8,73972437,73986514,30.0,AR,yes,loss of function (recessive),,carrier
+TMPRSS3,nonsyndromic genetic hearing loss,chr21,42371840,42396122,30.0,AR,yes,loss of function (recessive),,carrier
+TMPRSS6,IRIDA syndrome,chr22,37065005,37110890,30.0,AR,yes,loss of function (recessive),,carrier
+TNFRSF13B,"immunodeficiency, common variable, 2",chr17,16929816,16972118,30.0,AR,yes,loss of function (recessive),,carrier
+TPP1,neuronal ceroid lipofuscinosis,chr11,6612768,6619448,30.0,AR,yes,loss of function (recessive),,carrier
+TRAPPC4,"neurodevelopmental disorder with epilepsy, spasticity, and brain atrophy",chr11,119018733,119025454,30.0,AR,yes,loss of function (recessive),,carrier
+TREX1,TREX1-related type 1 interferonopathy,chr3,48465811,48467645,30.0,AR,yes,loss of function (recessive),,carrier
+TRIP11,TRIP11-related skeletal dysplasia,chr14,91965991,92040902,30.0,AR,yes,loss of function (recessive),,carrier
+TRMU,mitochondrial disease,chr22,46330875,46357344,30.0,AR,yes,loss of function (recessive),,carrier
+TRPM1,TRPM1-related retinopathy,chr15,31001065,31161160,30.0,AR,yes,loss of function (recessive),,carrier
+TTC21B,nephronophthisis 12,chr2,165857475,165953851,30.0,AR,yes,loss of function (recessive),,carrier
+TTC7A,multiple intestinal atresia,chr2,46915869,47076137,30.0,AR,yes,loss of function (recessive),,carrier
+TUBGCP6,microcephaly and chorioretinopathy 1,chr22,50217621,50245033,30.0,AR,yes,loss of function (recessive),,carrier
+TULP1,Leber congenital amaurosis 15,chr6,35497874,35512941,30.0,AR,yes,loss of function (recessive),,carrier
+TXNL4A,choanal atresia-hearing loss-cardiac defects-craniofacial dysmorphism syndrome,chr18,79970691,80033949,30.0,AR,yes,loss of function (recessive),,carrier
+TYMP,mitochondrial disease,chr22,50525752,50530326,30.0,AR,yes,loss of function (recessive),,carrier
+TYR,oculocutaneous albinism type 1,chr11,89177875,89295759,30.0,AR,yes,loss of function (recessive),,carrier
+UBA5,genetic developmental and epileptic encephalopathy,chr3,132654446,132679794,30.0,AR,yes,loss of function (recessive),,carrier
+UNC13D,familial hemophagocytic lymphohistiocytosis 3,chr17,75827032,75845353,30.0,AR,yes,loss of function (recessive),,carrier
+UNC80,"hypotonia, infantile, with psychomotor retardation and characteristic facies 2",chr2,209771569,209999300,30.0,AR,yes,loss of function (recessive),,carrier
+UROS,cutaneous porphyria,chr10,125784980,125823288,30.0,AR,yes,loss of function (recessive),,carrier
+USH1C,Usher syndrome type 1,chr11,17493895,17544435,30.0,AR,yes,loss of function (recessive),,carrier
+USH2A,Usher syndrome type 2,chr1,215621576,216423448,30.0,AR,yes,loss of function (recessive),,carrier
+VPS13B,Cohen syndrome,chr8,99013254,99877580,30.0,AR,yes,loss of function (recessive),,carrier
+WARS2,mitochondrial disease,chr1,119029164,119140679,30.0,AR,yes,loss of function (recessive),,carrier
+WDPCP,ciliopathy,chr2,63119559,63827843,30.0,AR,yes,loss of function (recessive),,carrier
+WDR19,ciliopathy,chr4,39182463,39285810,30.0,AR,yes,loss of function (recessive),,carrier
+WFS1,Wolfram syndrome,chr4,6269832,6303265,30.0,AR,yes,loss of function (recessive),,carrier
+WRN,Werner syndrome,chr8,31033761,31176138,30.0,AR,yes,loss of function (recessive),,carrier
+XPC,xeroderma pigmentosum group C,chr3,14145145,14178767,30.0,AR,yes,loss of function (recessive),,carrier
+YARS2,mitochondrial disease,chr12,32725785,32755948,30.0,AR,yes,loss of function (recessive),,carrier

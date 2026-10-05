@@ -27,13 +27,19 @@ def lookup(chrom: str, pos: int, ref: str, alt: str) -> dict:
     cache = _load()
     if vid in cache:
         return cache[vid]
-    for attempt in range(3):
-        r = requests.post(API, json={"query": QUERY, "variables": {"id": vid}}, timeout=60)
-        if r.status_code == 429:
-            time.sleep(5 * (attempt + 1))
-            continue
-        break
-    body = r.json()
+    body = None
+    for attempt in range(5):
+        try:
+            r = requests.post(API, json={"query": QUERY, "variables": {"id": vid}}, timeout=60)
+            body = r.json()
+            if r.status_code == 200:
+                break
+        except (requests.RequestException, ValueError):
+            pass
+        body = None
+        time.sleep(5 * (attempt + 1))  # gnomAD rate-limits bursts
+    if body is None:
+        return {"found": None, "error": "gnomAD unavailable", "af_all": 0.0, "af_sas": 0.0, "an_all": 0, "an_sas": 0}
     v = (body.get("data") or {}).get("variant")
     if not v:
         out = {"found": False, "af_all": 0.0, "af_sas": 0.0, "an_all": 0, "an_sas": 0}

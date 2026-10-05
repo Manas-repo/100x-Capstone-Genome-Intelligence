@@ -15,6 +15,7 @@ import gzip
 import sys
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -29,10 +30,18 @@ VARIANT_COLS = [
 
 
 def in_panel(df: pd.DataFrame, panel: pd.DataFrame) -> pd.Series:
+    """True where the variant falls inside any panel gene (interval lookup per chromosome)."""
     keep = pd.Series(False, index=df.index)
     chrom = "chr" + df["Chromosome"].astype(str)
-    for p in panel.itertuples():
-        keep |= (chrom == p.chrom) & df["PositionVCF"].between(p.start, p.end)
+    for ch, genes in panel.groupby("chrom"):
+        on = chrom == ch
+        if not on.any():
+            continue
+        pos = df.loc[on, "PositionVCF"].to_numpy()
+        hit = np.zeros(len(pos), dtype=bool)
+        for g in genes.itertuples():
+            hit |= (pos >= g.start) & (pos <= g.end)
+        keep.loc[on] = hit
     return keep
 
 
