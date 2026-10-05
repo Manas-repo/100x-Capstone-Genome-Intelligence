@@ -8,7 +8,7 @@ from groq import Groq
 load_dotenv()
 
 key = os.getenv("GROQ_API_KEY")
-model = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile")
+model = os.getenv("GROQ_MODEL", "openai/gpt-oss-120b")
 if not key:
     raise SystemExit("GROQ_API_KEY is empty. Paste it into the .env file first.")
 
