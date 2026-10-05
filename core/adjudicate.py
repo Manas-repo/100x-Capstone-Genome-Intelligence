@@ -34,10 +34,14 @@ Evidence tied to the lab's own patient (their phenotype, a de novo finding in th
 in their family, a second variant in trans in their patient) does not carry over to an unrelated
 healthy person. Evidence about the variant itself (functional studies, population rarity, many
 independent affected carriers, an expert panel) can carry over. Be strict and brief. Quote the
-lab's words in reasons. Never invent evidence the text does not state. Reply in JSON only."""
+lab's words in reasons. Never invent evidence the text does not state. Use expert_review only for a
+ClinGen expert panel or practice guideline; a lab merely citing the ACMG/AMP guidelines is none_stated.
+If a lab gives no reasoning, answer cant_tell with reason "No reasoning given." Do not suggest checks
+whose answer you were already given (such as population frequency). Reply in JSON only."""
 
 USER = """Variant: {name} in {gene} ({consequence}). Gene disease mechanism: {mechanism}.
 Condition(s): {conditions}
+Population frequency (gnomAD v4, already shown to the curator): {population}
 Person: {person}
 
 Lab submissions (id, call, year, method, reasoning):
@@ -49,7 +53,9 @@ Return JSON:
  expert_review, none_stated>], "carries_over": "yes" | "partly" | "no" | "cant_tell",
  "reason": "<one sentence quoting the lab>"}}],
  "strongest_transferable_evidence": "<one sentence, or 'none'>",
- "cheapest_check": "<the single quickest thing the curator should check to confirm or reject this, one sentence>"}}"""
+ "cheapest_check": "<the single quickest thing the curator should check next, one sentence. The curator
+ already has gnomAD frequencies for every population, so suggest something else, e.g. a named paper or
+ functional study, asking a submitter for its evidence, the gene's mechanism, or a specific ACMG criterion>"}}"""
 
 
 def _cache() -> dict:
@@ -57,6 +63,12 @@ def _cache() -> dict:
         return json.loads(CACHE.read_text())
     except (FileNotFoundError, ValueError):
         return {}
+
+
+def _pop_text(p: dict) -> str:
+    if not p.get("found"):
+        return "not in gnomAD"
+    return f"South Asian {p['af_sas']:.4%}, all populations {p['af_all']:.4%}"
 
 
 def model_review(ev: dict) -> dict | None:
@@ -78,7 +90,8 @@ def model_review(ev: dict) -> dict | None:
         lines.append(f"[{i}] {s['call']} | {s['year']} | {s['method']} | {s['submitter']}: {text}")
     prompt = USER.format(
         name=ev["name"], gene=ev["gene"], consequence=ev["consequence"], mechanism=ev["mechanism_note"],
-        conditions=ev["conditions"], person=PERSON.format(zygosity=ev["zygosity"]), subs="\n".join(lines),
+        conditions=ev["conditions"], population=_pop_text(ev["population"]),
+        person=PERSON.format(zygosity=ev["zygosity"]), subs="\n".join(lines),
     )
     resp = Groq(api_key=key).chat.completions.create(
         model=os.getenv("GROQ_MODEL", "openai/gpt-oss-120b"),
@@ -109,8 +122,9 @@ def verdict(ev: dict, fl: list[dict], review: dict | None) -> tuple[str, list[st
     carried = None
     if review:
         sup_labs = [l for l in review.get("labs", []) if l.get("call") in ("P", "LP")]
-        carried = sum(l.get("carries_over") in ("yes", "partly") for l in sup_labs)
-        if sup_labs and carried == 0:
+        judged = [l for l in sup_labs if l.get("carries_over") != "cant_tell"]  # labs that gave reasoning
+        carried = sum(l.get("carries_over") in ("yes", "partly") for l in judged)
+        if judged and carried == 0:
             contests.append("None of the pathogenic labs' stated reasoning carries over to this person.")
 
     if expert and not any(f["code"] in ("conflict", "null_not_lof", "sas_enriched") for f in fl):

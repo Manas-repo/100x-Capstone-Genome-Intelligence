@@ -1,0 +1,117 @@
+{
+ "812121": {
+  "labs": [
+   {
+    "id": 0,
+    "evidence_types": [],
+    "carries_over": "cant_tell",
+    "reason": "No reasoning given.",
+    "submitter": "Human Molecular Genetics Lab, PMAS-arid Agriculture University Rawalpindi",
+    "call": "P"
+   },
+   {
+    "id": 1,
+    "evidence_types": [],
+    "carries_over": "cant_tell",
+    "reason": "No reasoning given.",
+    "submitter": "Centre for Genomic Medicine, Manchester, Central Manchester University Hospitals",
+    "call": "P"
+   },
+   {
+    "id": 2,
+    "evidence_types": [],
+    "carries_over": "cant_tell",
+    "reason": "No reasoning given.",
+    "submitter": "Labcorp Genetics (formerly Invitae), Labcorp",
+    "call": "LB"
+   },
+   {
+    "id": 3,
+    "evidence_types": [],
+    "carries_over": "cant_tell",
+    "reason": "No reasoning given.",
+    "submitter": "Fulgent Genetics, Fulgent Genetics",
+    "call": "LB"
+   },
+   {
+    "id": 4,
+    "evidence_types": [],
+    "carries_over": "cant_tell",
+    "reason": "No reasoning given.",
+    "submitter": "Blueprint Genetics",
+    "call": "LB"
+   },
+   {
+    "id": 5,
+    "evidence_types": [
+     "population_rarity",
+     "computational"
+    ],
+    "carries_over": "yes",
+    "reason": "Multiple lines of computational evidence (Polyphen - Damaging, SIFT - Damaging and MutationTaster - Disease causing) predict a damaging effect ... The variant is reported with the allele frequency 0.04% in the gnomAD Exomes, leading to a classification of Uncertain Significance.",
+    "submitter": "Neuberg Centre For Genomic Medicine, NCGM",
+    "call": "VUS"
+   }
+  ],
+  "strongest_transferable_evidence": "Computational predictions (PolyPhen, SIFT, MutationTaster) indicating a damaging effect on the protein.",
+  "cheapest_check": "Search for any published functional assay or experimental study of the NPHP4 p.Thr977Met variant to assess its impact."
+ },
+ "499066": {
+  "labs": [
+   {
+    "id": 0,
+    "evidence_types": [
+     "none_stated"
+    ],
+    "carries_over": "cant_tell",
+    "reason": "No reasoning given.",
+    "submitter": "Centre for Genomic Medicine, Manchester, Central Manchester University Hospitals",
+    "call": "P"
+   },
+   {
+    "id": 1,
+    "evidence_types": [
+     "none_stated"
+    ],
+    "carries_over": "cant_tell",
+    "reason": "No reasoning given.",
+    "submitter": "Labcorp Genetics (formerly Invitae), Labcorp",
+    "call": "LB"
+   },
+   {
+    "id": 2,
+    "evidence_types": [
+     "none_stated"
+    ],
+    "carries_over": "cant_tell",
+    "reason": "No reasoning given.",
+    "submitter": "PreventionGenetics, part of Exact Sciences",
+    "call": "LB"
+   },
+   {
+    "id": 3,
+    "evidence_types": [
+     "none_stated"
+    ],
+    "carries_over": "cant_tell",
+    "reason": "No reasoning given.",
+    "submitter": "Blueprint Genetics",
+    "call": "VUS"
+   },
+   {
+    "id": 4,
+    "evidence_types": [
+     "population_rarity",
+     "computational",
+     "case_observations"
+    ],
+    "carries_over": "partly",
+    "reason": "Multiple lines of computational evidence (Polyphen - Damaging, SIFT - Damaging and MutationTaster - Disease causing) predict a damaging effect on protein structure and function for this variant.",
+    "submitter": "Neuberg Centre For Genomic Medicine, NCGM",
+    "call": "VUS"
+   }
+  ],
+  "strongest_transferable_evidence": "Population rarity: gnomAD frequency 0.05% (South Asian 0.393%).",
+  "cheapest_check": "Check for any published functional studies of NPHP4 p.Pro677Ser (e.g., in vitro assays) to obtain variant-specific functional evidence."
+ }
+}

@@ -55,6 +55,8 @@ def card_html(r: dict) -> str:
     dis = "".join(_lab_line(s, by_sub.get(s["submitter"])) for s in e["dispute"][:4]) or "<li>none</li>"
     why = "".join(f"<li>{esc(w)}</li>" for w in r["why"])
     check = review.get("cheapest_check")
+    if check and ("gnomad" in check.lower() or "frequency" in check.lower()):
+        check = None  # the card already shows population frequency
     return f"""
 <div style="border:1px solid #ccc;border-left:6px solid {COLORS[v]};border-radius:8px;padding:12px 16px">
   <div style="font-size:1.1em"><span style="background:{COLORS[v]};color:#fff;padding:2px 8px;border-radius:4px">{v}</span>
