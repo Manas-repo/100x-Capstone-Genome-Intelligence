@@ -11,7 +11,7 @@ from datetime import date
 import pandas as pd
 
 from gnomad import lookup as gnomad_lookup
-from vcf_clinvar import clinvar_submissions, panel
+from vcf_clinvar import panel, submissions_for
 
 TODAY = date(2026, 10, 5)
 STALE_YEARS = 5
@@ -50,8 +50,7 @@ def assemble(row: pd.Series, tag: str = "", with_population: bool = True) -> dic
     """row: one sample variant matched to ClinVar (from vcf_clinvar.match_clinvar).
     tag: ClinVar release to read submissions from ('' = current, '2020-01' for the backtest)."""
     vid = int(row["VariationID"])
-    subs = clinvar_submissions(tag)
-    subs = subs[subs["VariationID"] == vid].copy()
+    subs = submissions_for(vid, tag)
     subs["call"] = subs["ClinicalSignificance"].map(_call)
     subs["year"] = subs["DateLastEvaluated"].map(_year)
     subs = subs.sort_values("year", ascending=False, na_position="last")

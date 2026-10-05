@@ -15,4 +15,5 @@ data/raw/
 
 # derived data (rebuilt by core/ scripts; too large for git)
 data/*.parquet
+data/*.sqlite
 data/samples/heldout_sample.vcf.gz

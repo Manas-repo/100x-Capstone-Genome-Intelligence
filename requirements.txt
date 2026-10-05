@@ -7,3 +7,4 @@ python-dotenv
 groq
 supabase
 pyarrow
+python-multipart
