@@ -1,4 +1,4 @@
-# Backend (FastAPI on Render) and data pipeline
+# App (FastAPI + Gradio in one Hugging Face Space) and data pipeline
 fastapi
 uvicorn
 pandas
@@ -8,3 +8,4 @@ groq
 supabase
 pyarrow
 python-multipart
+gradio

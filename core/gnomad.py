@@ -18,7 +18,16 @@ query($id: String!) {
 
 
 def _load() -> dict:
-    return json.loads(CACHE.read_text()) if CACHE.exists() else {}
+    try:
+        return json.loads(CACHE.read_text())
+    except (FileNotFoundError, ValueError):  # missing or half-written cache: start fresh
+        return {}
+
+
+def _save(cache: dict) -> None:
+    tmp = CACHE.with_suffix(".tmp")
+    tmp.write_text(json.dumps(cache, indent=1))
+    tmp.replace(CACHE)  # atomic, so a crash never leaves a broken file
 
 
 def lookup(chrom: str, pos: int, ref: str, alt: str) -> dict:
@@ -62,7 +71,7 @@ def lookup(chrom: str, pos: int, ref: str, alt: str) -> dict:
             "an_sas": an_sas,
         }
     cache[vid] = out
-    CACHE.write_text(json.dumps(cache, indent=1))
+    _save(cache)
     return out
 
 

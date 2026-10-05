@@ -17,3 +17,4 @@ data/raw/
 data/*.parquet
 data/*.sqlite
 data/samples/heldout_sample.vcf.gz
+results/feedback_local.jsonl

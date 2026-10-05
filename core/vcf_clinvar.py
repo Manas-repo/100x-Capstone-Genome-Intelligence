@@ -11,7 +11,7 @@ DATA = Path(__file__).resolve().parent.parent / "data"
 # in a small server's memory. The parquet files are only needed to build it and for the backtest.
 APP_DB = DATA / "clinvar_app.sqlite"
 VAR_COLS = ["chrom", "pos", "ref", "alt", "VariationID", "Name", "GeneSymbol", "ClinicalSignificance",
-            "ReviewStatus", "NumberSubmitters", "PhenotypeList"]
+            "ClinSigSimple", "ReviewStatus", "NumberSubmitters", "PhenotypeList"]
 SUB_COLS = ["VariationID", "ClinicalSignificance", "DateLastEvaluated", "Description", "ReportedPhenotypeInfo",
             "ReviewStatus", "CollectionMethod", "Submitter", "SCV"]
 

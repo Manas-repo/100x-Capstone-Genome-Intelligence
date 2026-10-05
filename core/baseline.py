@@ -1,7 +1,8 @@
 """Naive baseline: what an obvious tool does (Promethease-style).
 
-VCF in -> look up each variant in ClinVar -> keep the ones whose headline label says pathogenic
--> rank by label and review stars. No weighing of evidence, no zygosity or inheritance logic,
+VCF in -> look up each variant in ClinVar -> keep what ClinVar's own "pathogenic" filter keeps
+(ClinSigSimple = 1: at least one lab currently calls it P/LP) when the headline is pathogenic, likely
+pathogenic or conflicting (not benign) -> rank by headline label and review stars. No weighing of evidence, no zygosity or inheritance logic,
 no population check, no reading of submitter reasoning.
 """
 import sys
@@ -12,7 +13,8 @@ import pandas as pd
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from vcf_clinvar import DATA, match_clinvar, read_vcf  # noqa: E402
 
-LABEL_RANK = {"Pathogenic": 0, "Pathogenic/Likely pathogenic": 1, "Likely pathogenic": 2}
+LABEL_RANK = {"Pathogenic": 0, "Pathogenic/Likely pathogenic": 1, "Likely pathogenic": 2,
+              "Conflicting classifications of pathogenicity": 3}
 STARS = {
     "practice guideline": 4,
     "reviewed by expert panel": 3,
@@ -25,7 +27,7 @@ STARS = {
 def run_baseline(vcf_path) -> pd.DataFrame:
     hits = match_clinvar(read_vcf(vcf_path))
     label = hits["ClinicalSignificance"].str.split(";").str[0].str.strip()
-    hits = hits[label.isin(LABEL_RANK)].copy()
+    hits = hits[(hits["ClinSigSimple"].astype(int) == 1) & label.isin(LABEL_RANK)].copy()
     hits["label"] = label[hits.index]
     hits["stars"] = hits["ReviewStatus"].map(STARS).fillna(0).astype(int)
     hits["rank_key"] = hits["label"].map(LABEL_RANK)

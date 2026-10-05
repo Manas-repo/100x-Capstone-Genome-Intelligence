@@ -53,7 +53,10 @@ Return JSON:
 
 
 def _cache() -> dict:
-    return json.loads(CACHE.read_text()) if CACHE.exists() else {}
+    try:
+        return json.loads(CACHE.read_text())
+    except (FileNotFoundError, ValueError):
+        return {}
 
 
 def model_review(ev: dict) -> dict | None:
@@ -89,7 +92,9 @@ def model_review(ev: dict) -> dict | None:
         if isinstance(i, int) and 0 <= i < len(subs):
             lab["submitter"], lab["call"] = subs[i]["submitter"], subs[i]["call"]
     cache[ck] = out
-    CACHE.write_text(json.dumps(cache, indent=1))
+    tmp = CACHE.with_suffix(".tmp")
+    tmp.write_text(json.dumps(cache, indent=1))
+    tmp.replace(CACHE)
     return out
 
 
