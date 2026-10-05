@@ -1,15 +1,19 @@
-"""Gradio frontend (T12c). Talks to the FastAPI backend at BACKEND_URL.
+"""Gradio frontend (T12c).
 
-Run locally (backend running on :8000):  python frontend/app.py
+If BACKEND_URL is set, it talks to the FastAPI backend over HTTP (separate deploy). If not, it
+calls the same backend functions in-process (one Hugging Face Space, or a plain local run).
+
+Run locally:  python app.py   (repo root)
 """
 import html
 import os
 import uuid
+from pathlib import Path
 
 import gradio as gr
 import requests
 
-BACKEND = os.getenv("BACKEND_URL", "http://localhost:8000").rstrip("/")
+BACKEND = os.getenv("BACKEND_URL", "").rstrip("/")
 SLOTS = 5  # matches SHOWN in core/adjudicate.py
 TIMEOUT = 300  # first call can wait on a sleeping Render instance plus model calls
 
@@ -79,17 +83,25 @@ def short(r: dict) -> str:
 
 def load(choice, upload):
     try:
-        if upload is not None:
+        if not BACKEND:
+            from api.main import analyse_file, analyse_named
+
+            if upload is not None:
+                data = analyse_file(Path(upload), os.path.basename(upload))
+            else:
+                data = analyse_named("heldout" if choice.startswith("Held") else "dev")
+        elif upload is not None:
             with open(upload, "rb") as f:
                 resp = requests.post(f"{BACKEND}/analyse", files={"file": (os.path.basename(upload), f)},
                                      timeout=TIMEOUT)
         else:
             sample = "heldout" if choice.startswith("Held") else "dev"
             resp = requests.post(f"{BACKEND}/analyse/{sample}", timeout=TIMEOUT)
-        resp.raise_for_status()
-        data = resp.json()
-    except requests.RequestException as ex:
-        msg = getattr(getattr(ex, "response", None), "text", "") or str(ex)
+        if BACKEND:
+            resp.raise_for_status()
+            data = resp.json()
+    except Exception as ex:  # bad upload, backend down: show it instead of crashing the page
+        msg = getattr(getattr(ex, "response", None), "text", "") or f"{type(ex).__name__}: {ex}"
         return [None, f"**Error:** {msg}"] + [gr.update(visible=False)] * SLOTS * 2 + ["", gr.update(choices=[]), [],
                                                                                       gr.update(choices=[])]
 
@@ -128,12 +140,16 @@ def send(data, session, source, variation_id, gene, verdict, answer, reason):
         return "Load a sample first."
     if answer not in ("agree", "disagree"):
         return "Pick agree or disagree."
+    row = {"session_id": session, "sample": data["sample"], "variation_id": int(variation_id), "gene": gene,
+           "source": source, "shown_verdict": verdict, "answer": answer, "reason": reason or None}
     try:
-        r = requests.post(f"{BACKEND}/feedback", timeout=60, json={
-            "session_id": session, "sample": data["sample"], "variation_id": int(variation_id), "gene": gene,
-            "source": source, "shown_verdict": verdict, "answer": answer, "reason": reason or None})
-        r.raise_for_status()
-    except requests.RequestException as ex:
+        if BACKEND:
+            requests.post(f"{BACKEND}/feedback", timeout=60, json=row).raise_for_status()
+        else:
+            from api.main import save_feedback
+
+            save_feedback(row)
+    except Exception as ex:
         return f"Not saved: {ex}"
     return f"Saved ({answer})."
 

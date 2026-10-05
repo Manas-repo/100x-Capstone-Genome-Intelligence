@@ -68,13 +68,22 @@ def samples():
     return [{"id": k, "label": "Development sample" if k == "dev" else "Held-out sample"} for k in SAMPLES]
 
 
+def analyse_named(sample: str) -> dict:
+    """Plain function behind POST /analyse/{sample}; the Gradio UI calls it directly when co-hosted."""
+    if sample not in _cache:
+        _cache[sample] = _run(ROOT / "data" / "samples" / SAMPLES[sample])
+    return {"sample": sample, **_cache[sample]}
+
+
+def analyse_file(path: Path, name: str) -> dict:
+    return {"sample": name, **_run(path)}
+
+
 @app.post("/analyse/{sample}")
 def analyse_sample(sample: str):
     if sample not in SAMPLES:
         raise HTTPException(404, f"unknown sample '{sample}'")
-    if sample not in _cache:
-        _cache[sample] = _run(ROOT / "data" / "samples" / SAMPLES[sample])
-    return {"sample": sample, **_cache[sample]}
+    return analyse_named(sample)
 
 
 @app.post("/analyse")
@@ -87,7 +96,7 @@ async def analyse_upload(file: UploadFile = File(...)):
         tmp.write(await file.read())
         path = Path(tmp.name)
     try:
-        return {"sample": name, **_run(path)}
+        return analyse_file(path, name)
     except Exception as e:  # a malformed file should say so, not crash the server
         raise HTTPException(422, f"Could not read this VCF: {type(e).__name__}: {e}")
     finally:
@@ -107,7 +116,12 @@ class Feedback(BaseModel):
 
 @app.post("/feedback")
 def feedback(fb: Feedback):
-    row = {**fb.model_dump(), "id": str(uuid.uuid4()), "created_at": datetime.now(timezone.utc).isoformat()}
+    return save_feedback(fb.model_dump())
+
+
+def save_feedback(answer: dict) -> dict:
+    row = {**Feedback(**answer).model_dump(), "id": str(uuid.uuid4()),
+           "created_at": datetime.now(timezone.utc).isoformat()}
     url, key = os.getenv("SUPABASE_URL"), os.getenv("SUPABASE_SERVICE_ROLE_KEY")
     if url and key:
         from supabase import create_client
