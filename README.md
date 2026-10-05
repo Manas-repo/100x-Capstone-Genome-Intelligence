@@ -4,7 +4,11 @@ emoji: 🧬
 colorFrom: green
 colorTo: gray
 sdk: gradio
+sdk_version: 6.29.1
 app_file: app.py
+python_version: "3.12"
+short_description: Challengeable findings from ClinVar P/LP calls
+startup_duration_timeout: 30m
 pinned: false
 ---
 

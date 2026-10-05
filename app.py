@@ -48,6 +48,15 @@ fetch_data()
 os.environ.setdefault("BACKEND_URL", f"http://127.0.0.1:{PORT}")
 sys.path.insert(0, str(ROOT / "frontend"))
 
+try:  # Hugging Face ZeroGPU hosting needs one GPU-decorated function; this app never calls it
+    import spaces
+
+    @spaces.GPU
+    def _unused_gpu():
+        return None
+except ImportError:  # local runs
+    pass
+
 import gradio as gr  # noqa: E402
 import uvicorn  # noqa: E402
 
