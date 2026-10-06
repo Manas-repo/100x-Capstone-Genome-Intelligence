@@ -49,7 +49,7 @@ def fetch_data() -> None:
 
 fetch_data()
 
-from frontend.app import demo  # noqa: E402
+from frontend.app import CSS, demo  # noqa: E402
 
 if __name__ == "__main__":
-    demo.launch()
+    demo.launch(css=CSS)
